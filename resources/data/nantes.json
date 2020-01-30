@@ -1,0 +1,33 @@
+{
+  "id": 1,
+  "name": "Les Divines Machines",
+  "league": "Nantes Derby Girls",
+  "roster": [
+    { "number": "#007", "name": "Ju Gueule Speed", "src": "007.jpg" },
+    { "number": "#111", "name": "Crash Volta", "src": "111.jpg" },
+    { "number": "#113", "name": "Colakov", "src": "empty.jpg" },
+    { "number": "#1312", "name": "Plaisir d'Offrir", "src": "empty.jpg" },
+    { "number": "#16", "name": "Vivienne Westblood", "src": "16.jpg" },
+    { "number": "#1718", "name": "Bonnie Demonia", "src": "1718.jpg" },
+    { "number": "#1932", "name": "Spontex", "src": "empty.jpg" },
+    { "number": "#212", "name": "Juno Future", "src": "212.jpg" },
+    { "number": "#2215", "name": "Major Storm", "src": "2215.jpg" },
+    { "number": "#232", "name": "Barracuda", "src": "232.jpg" },
+    { "number": "#27", "name": "Tichatte", "src": "empty.jpg" },
+    { "number": "#33", "name": "Oh là là", "src": "33.jpg" },
+    { "number": "#411", "name": "SeaScape", "src": "411.jpg" },
+    { "number": "#456", "name": "Hache Tag Joe", "src": "empty.jpg" },
+    { "number": "#601", "name": "Evy C Raptor", "src": "601.jpg" },
+    { "number": "#729", "name": "Gipsy Queen", "src": "empty.jpg" },
+    { "number": "#73", "name": "Loki d'or", "src": "73.jpg" },
+    { "number": "#789", "name": "Nuf", "src": "empty.jpg" },
+    { "number": "#91", "name": "Cannibal Rider", "src": "91.jpg" },
+    { "number": "#92", "name": "Dory Fist", "src": "92.jpg" },
+    { "number": "Bench", "name": "Christo Bee", "src": "bench.jpg" },
+    { "number": "Bench", "name": "Cass'Burn", "src": "empty.jpg" },
+    { "number": "Line-up", "name": "Balle Affreuse", "src": "empty.jpg" },
+    { "number": "Line-up", "name": "Sang Tuerie", "src": "empty.jpg" }
+  ],
+  "folder": "nantes",
+  "swiper": false
+}
