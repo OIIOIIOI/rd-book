@@ -26,13 +26,14 @@
         }),
         created ()
         {
-            let sw = new Swiper('#teams', {
+            // new Swiper('#teams');
+            /*let sw = new Swiper('#teams', {
                 // direction: 'vertical',
                 pagination: {
                     el: '#teams-nav',
                 },
             });
-            console.log(sw);
+            console.log(sw);*/
         },
     }
 </script>

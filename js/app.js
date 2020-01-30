@@ -2021,14 +2021,15 @@ __webpack_require__.r(__webpack_exports__);
       teams: [__webpack_require__(/*! ../../data/quimper */ "./resources/data/quimper.json"), __webpack_require__(/*! ../../data/nantes */ "./resources/data/nantes.json")]
     };
   },
-  created: function created() {
-    var sw = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('#teams', {
-      // direction: 'vertical',
-      pagination: {
-        el: '#teams-nav'
-      }
+  created: function created() {// new Swiper('#teams');
+
+    /*let sw = new Swiper('#teams', {
+        // direction: 'vertical',
+        pagination: {
+            el: '#teams-nav',
+        },
     });
-    console.log(sw);
+    console.log(sw);*/
   }
 });
 
