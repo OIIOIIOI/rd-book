@@ -26,18 +26,21 @@
         }),
         created ()
         {
-            // new Swiper('#teams');
-            /*let sw = new Swiper('#teams', {
-                // direction: 'vertical',
-                pagination: {
-                    el: '#teams-nav',
-                },
-            });
-            console.log(sw);*/
+            this.$nextTick(() => {
+                new Swiper('#teams', {
+                    direction: 'vertical',
+                    pagination: {
+                        el: '#teams-nav',
+                    },
+                });
+            })
         },
     }
 </script>
 
 <style scoped>
-
+	.swiper-container {
+		width: 100%;
+		height: 85vh;
+	}
 </style>

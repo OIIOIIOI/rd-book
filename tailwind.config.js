@@ -34,12 +34,14 @@ module.exports = {
       spacing: {
         '9/16': '177.77%',
         'header': '10vh',
+        'marquee': '5vh',
       },
       opacity: {
         '90': '.9',
       },
       lineHeight: {
         'header': '10vh',
+        'marquee': '5vh',
       },
     }
   },

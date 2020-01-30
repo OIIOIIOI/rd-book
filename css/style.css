@@ -2117,6 +2117,10 @@ video {
   height: 10vh;
 }
 
+.h-marquee{
+  height: 5vh;
+}
+
 .h-full{
   height: 100%;
 }
@@ -2151,6 +2155,10 @@ video {
 
 .leading-header{
   line-height: 10vh;
+}
+
+.leading-marquee{
+  line-height: 5vh;
 }
 
 .list-inside{
@@ -2261,6 +2269,10 @@ video {
   margin: 10vh;
 }
 
+.m-marquee{
+  margin: 5vh;
+}
+
 .-m-1{
   margin: -0.25rem;
 }
@@ -2339,6 +2351,10 @@ video {
 
 .-m-header{
   margin: -10vh;
+}
+
+.-m-marquee{
+  margin: -5vh;
 }
 
 .my-0{
@@ -2561,6 +2577,16 @@ video {
   margin-right: 10vh;
 }
 
+.my-marquee{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.mx-marquee{
+  margin-left: 5vh;
+  margin-right: 5vh;
+}
+
 .-my-1{
   margin-top: -0.25rem;
   margin-bottom: -0.25rem;
@@ -2759,6 +2785,16 @@ video {
 .-mx-header{
   margin-left: -10vh;
   margin-right: -10vh;
+}
+
+.-my-marquee{
+  margin-top: -5vh;
+  margin-bottom: -5vh;
+}
+
+.-mx-marquee{
+  margin-left: -5vh;
+  margin-right: -5vh;
 }
 
 .mt-0{
@@ -3113,6 +3149,22 @@ video {
   margin-left: 10vh;
 }
 
+.mt-marquee{
+  margin-top: 5vh;
+}
+
+.mr-marquee{
+  margin-right: 5vh;
+}
+
+.mb-marquee{
+  margin-bottom: 5vh;
+}
+
+.ml-marquee{
+  margin-left: 5vh;
+}
+
 .-mt-1{
   margin-top: -0.25rem;
 }
@@ -3431,6 +3483,22 @@ video {
 
 .-ml-header{
   margin-left: -10vh;
+}
+
+.-mt-marquee{
+  margin-top: -5vh;
+}
+
+.-mr-marquee{
+  margin-right: -5vh;
+}
+
+.-mb-marquee{
+  margin-bottom: -5vh;
+}
+
+.-ml-marquee{
+  margin-left: -5vh;
 }
 
 .max-h-full{
@@ -3795,6 +3863,10 @@ video {
   padding: 10vh;
 }
 
+.p-marquee{
+  padding: 5vh;
+}
+
 .py-0{
   padding-top: 0;
   padding-bottom: 0;
@@ -4003,6 +4075,16 @@ video {
 .px-header{
   padding-left: 10vh;
   padding-right: 10vh;
+}
+
+.py-marquee{
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.px-marquee{
+  padding-left: 5vh;
+  padding-right: 5vh;
 }
 
 .pt-0{
@@ -4339,6 +4421,22 @@ video {
 
 .pl-header{
   padding-left: 10vh;
+}
+
+.pt-marquee{
+  padding-top: 5vh;
+}
+
+.pr-marquee{
+  padding-right: 5vh;
+}
+
+.pb-marquee{
+  padding-bottom: 5vh;
+}
+
+.pl-marquee{
+  padding-left: 5vh;
 }
 
 .placeholder-transparent::-webkit-input-placeholder{
@@ -5993,6 +6091,10 @@ video {
   width: 10vh;
 }
 
+.w-marquee{
+  width: 5vh;
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -6799,11 +6901,6 @@ a:hover, a:active, a:focus {
   line-height: 10vh;
 }
 
-.swiper-container {
-  width: 100%;
-  height: 90vh;
-}
-
 .swiper-pagination-progressbar {
   background: rgba(255, 255, 255, 1);
   background-color: #640021;
@@ -6824,31 +6921,6 @@ a:hover, a:active, a:focus {
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #bc003e;
 }
-
-/*#teams {
-    .swiper-container {
-        .swiper-slide {
-            img {
-                @apply w-full h-full object-cover;
-            }
-            &:first-child {
-                img {
-                    @apply object-contain;
-                }
-            }
-            .infos {
-                box-sizing: border-box !important;
-
-                .infos-number {
-                    @apply font-sans font-black text-3xl leading-none mr-4;
-                }
-                .infos-name {
-                    @apply font-sans font-semibold text-2xl leading-none;
-                }
-            }
-        }
-    }
-}*/
 
 @media (min-width: 640px){
   .sm\:sr-only{
@@ -8341,6 +8413,10 @@ a:hover, a:active, a:focus {
     height: 10vh;
   }
 
+  .sm\:h-marquee{
+    height: 5vh;
+  }
+
   .sm\:h-full{
     height: 100%;
   }
@@ -8375,6 +8451,10 @@ a:hover, a:active, a:focus {
 
   .sm\:leading-header{
     line-height: 10vh;
+  }
+
+  .sm\:leading-marquee{
+    line-height: 5vh;
   }
 
   .sm\:list-inside{
@@ -8485,6 +8565,10 @@ a:hover, a:active, a:focus {
     margin: 10vh;
   }
 
+  .sm\:m-marquee{
+    margin: 5vh;
+  }
+
   .sm\:-m-1{
     margin: -0.25rem;
   }
@@ -8563,6 +8647,10 @@ a:hover, a:active, a:focus {
 
   .sm\:-m-header{
     margin: -10vh;
+  }
+
+  .sm\:-m-marquee{
+    margin: -5vh;
   }
 
   .sm\:my-0{
@@ -8785,6 +8873,16 @@ a:hover, a:active, a:focus {
     margin-right: 10vh;
   }
 
+  .sm\:my-marquee{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .sm\:mx-marquee{
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+
   .sm\:-my-1{
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -8983,6 +9081,16 @@ a:hover, a:active, a:focus {
   .sm\:-mx-header{
     margin-left: -10vh;
     margin-right: -10vh;
+  }
+
+  .sm\:-my-marquee{
+    margin-top: -5vh;
+    margin-bottom: -5vh;
+  }
+
+  .sm\:-mx-marquee{
+    margin-left: -5vh;
+    margin-right: -5vh;
   }
 
   .sm\:mt-0{
@@ -9337,6 +9445,22 @@ a:hover, a:active, a:focus {
     margin-left: 10vh;
   }
 
+  .sm\:mt-marquee{
+    margin-top: 5vh;
+  }
+
+  .sm\:mr-marquee{
+    margin-right: 5vh;
+  }
+
+  .sm\:mb-marquee{
+    margin-bottom: 5vh;
+  }
+
+  .sm\:ml-marquee{
+    margin-left: 5vh;
+  }
+
   .sm\:-mt-1{
     margin-top: -0.25rem;
   }
@@ -9655,6 +9779,22 @@ a:hover, a:active, a:focus {
 
   .sm\:-ml-header{
     margin-left: -10vh;
+  }
+
+  .sm\:-mt-marquee{
+    margin-top: -5vh;
+  }
+
+  .sm\:-mr-marquee{
+    margin-right: -5vh;
+  }
+
+  .sm\:-mb-marquee{
+    margin-bottom: -5vh;
+  }
+
+  .sm\:-ml-marquee{
+    margin-left: -5vh;
   }
 
   .sm\:max-h-full{
@@ -10019,6 +10159,10 @@ a:hover, a:active, a:focus {
     padding: 10vh;
   }
 
+  .sm\:p-marquee{
+    padding: 5vh;
+  }
+
   .sm\:py-0{
     padding-top: 0;
     padding-bottom: 0;
@@ -10227,6 +10371,16 @@ a:hover, a:active, a:focus {
   .sm\:px-header{
     padding-left: 10vh;
     padding-right: 10vh;
+  }
+
+  .sm\:py-marquee{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .sm\:px-marquee{
+    padding-left: 5vh;
+    padding-right: 5vh;
   }
 
   .sm\:pt-0{
@@ -10563,6 +10717,22 @@ a:hover, a:active, a:focus {
 
   .sm\:pl-header{
     padding-left: 10vh;
+  }
+
+  .sm\:pt-marquee{
+    padding-top: 5vh;
+  }
+
+  .sm\:pr-marquee{
+    padding-right: 5vh;
+  }
+
+  .sm\:pb-marquee{
+    padding-bottom: 5vh;
+  }
+
+  .sm\:pl-marquee{
+    padding-left: 5vh;
   }
 
   .sm\:placeholder-transparent::-webkit-input-placeholder{
@@ -12217,6 +12387,10 @@ a:hover, a:active, a:focus {
     width: 10vh;
   }
 
+  .sm\:w-marquee{
+    width: 5vh;
+  }
+
   .sm\:w-1\/2{
     width: 50%;
   }
@@ -13849,6 +14023,10 @@ a:hover, a:active, a:focus {
     height: 10vh;
   }
 
+  .md\:h-marquee{
+    height: 5vh;
+  }
+
   .md\:h-full{
     height: 100%;
   }
@@ -13883,6 +14061,10 @@ a:hover, a:active, a:focus {
 
   .md\:leading-header{
     line-height: 10vh;
+  }
+
+  .md\:leading-marquee{
+    line-height: 5vh;
   }
 
   .md\:list-inside{
@@ -13993,6 +14175,10 @@ a:hover, a:active, a:focus {
     margin: 10vh;
   }
 
+  .md\:m-marquee{
+    margin: 5vh;
+  }
+
   .md\:-m-1{
     margin: -0.25rem;
   }
@@ -14071,6 +14257,10 @@ a:hover, a:active, a:focus {
 
   .md\:-m-header{
     margin: -10vh;
+  }
+
+  .md\:-m-marquee{
+    margin: -5vh;
   }
 
   .md\:my-0{
@@ -14293,6 +14483,16 @@ a:hover, a:active, a:focus {
     margin-right: 10vh;
   }
 
+  .md\:my-marquee{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .md\:mx-marquee{
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+
   .md\:-my-1{
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -14491,6 +14691,16 @@ a:hover, a:active, a:focus {
   .md\:-mx-header{
     margin-left: -10vh;
     margin-right: -10vh;
+  }
+
+  .md\:-my-marquee{
+    margin-top: -5vh;
+    margin-bottom: -5vh;
+  }
+
+  .md\:-mx-marquee{
+    margin-left: -5vh;
+    margin-right: -5vh;
   }
 
   .md\:mt-0{
@@ -14845,6 +15055,22 @@ a:hover, a:active, a:focus {
     margin-left: 10vh;
   }
 
+  .md\:mt-marquee{
+    margin-top: 5vh;
+  }
+
+  .md\:mr-marquee{
+    margin-right: 5vh;
+  }
+
+  .md\:mb-marquee{
+    margin-bottom: 5vh;
+  }
+
+  .md\:ml-marquee{
+    margin-left: 5vh;
+  }
+
   .md\:-mt-1{
     margin-top: -0.25rem;
   }
@@ -15163,6 +15389,22 @@ a:hover, a:active, a:focus {
 
   .md\:-ml-header{
     margin-left: -10vh;
+  }
+
+  .md\:-mt-marquee{
+    margin-top: -5vh;
+  }
+
+  .md\:-mr-marquee{
+    margin-right: -5vh;
+  }
+
+  .md\:-mb-marquee{
+    margin-bottom: -5vh;
+  }
+
+  .md\:-ml-marquee{
+    margin-left: -5vh;
   }
 
   .md\:max-h-full{
@@ -15527,6 +15769,10 @@ a:hover, a:active, a:focus {
     padding: 10vh;
   }
 
+  .md\:p-marquee{
+    padding: 5vh;
+  }
+
   .md\:py-0{
     padding-top: 0;
     padding-bottom: 0;
@@ -15735,6 +15981,16 @@ a:hover, a:active, a:focus {
   .md\:px-header{
     padding-left: 10vh;
     padding-right: 10vh;
+  }
+
+  .md\:py-marquee{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .md\:px-marquee{
+    padding-left: 5vh;
+    padding-right: 5vh;
   }
 
   .md\:pt-0{
@@ -16071,6 +16327,22 @@ a:hover, a:active, a:focus {
 
   .md\:pl-header{
     padding-left: 10vh;
+  }
+
+  .md\:pt-marquee{
+    padding-top: 5vh;
+  }
+
+  .md\:pr-marquee{
+    padding-right: 5vh;
+  }
+
+  .md\:pb-marquee{
+    padding-bottom: 5vh;
+  }
+
+  .md\:pl-marquee{
+    padding-left: 5vh;
   }
 
   .md\:placeholder-transparent::-webkit-input-placeholder{
@@ -17725,6 +17997,10 @@ a:hover, a:active, a:focus {
     width: 10vh;
   }
 
+  .md\:w-marquee{
+    width: 5vh;
+  }
+
   .md\:w-1\/2{
     width: 50%;
   }
@@ -19357,6 +19633,10 @@ a:hover, a:active, a:focus {
     height: 10vh;
   }
 
+  .lg\:h-marquee{
+    height: 5vh;
+  }
+
   .lg\:h-full{
     height: 100%;
   }
@@ -19391,6 +19671,10 @@ a:hover, a:active, a:focus {
 
   .lg\:leading-header{
     line-height: 10vh;
+  }
+
+  .lg\:leading-marquee{
+    line-height: 5vh;
   }
 
   .lg\:list-inside{
@@ -19501,6 +19785,10 @@ a:hover, a:active, a:focus {
     margin: 10vh;
   }
 
+  .lg\:m-marquee{
+    margin: 5vh;
+  }
+
   .lg\:-m-1{
     margin: -0.25rem;
   }
@@ -19579,6 +19867,10 @@ a:hover, a:active, a:focus {
 
   .lg\:-m-header{
     margin: -10vh;
+  }
+
+  .lg\:-m-marquee{
+    margin: -5vh;
   }
 
   .lg\:my-0{
@@ -19801,6 +20093,16 @@ a:hover, a:active, a:focus {
     margin-right: 10vh;
   }
 
+  .lg\:my-marquee{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .lg\:mx-marquee{
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+
   .lg\:-my-1{
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -19999,6 +20301,16 @@ a:hover, a:active, a:focus {
   .lg\:-mx-header{
     margin-left: -10vh;
     margin-right: -10vh;
+  }
+
+  .lg\:-my-marquee{
+    margin-top: -5vh;
+    margin-bottom: -5vh;
+  }
+
+  .lg\:-mx-marquee{
+    margin-left: -5vh;
+    margin-right: -5vh;
   }
 
   .lg\:mt-0{
@@ -20353,6 +20665,22 @@ a:hover, a:active, a:focus {
     margin-left: 10vh;
   }
 
+  .lg\:mt-marquee{
+    margin-top: 5vh;
+  }
+
+  .lg\:mr-marquee{
+    margin-right: 5vh;
+  }
+
+  .lg\:mb-marquee{
+    margin-bottom: 5vh;
+  }
+
+  .lg\:ml-marquee{
+    margin-left: 5vh;
+  }
+
   .lg\:-mt-1{
     margin-top: -0.25rem;
   }
@@ -20671,6 +20999,22 @@ a:hover, a:active, a:focus {
 
   .lg\:-ml-header{
     margin-left: -10vh;
+  }
+
+  .lg\:-mt-marquee{
+    margin-top: -5vh;
+  }
+
+  .lg\:-mr-marquee{
+    margin-right: -5vh;
+  }
+
+  .lg\:-mb-marquee{
+    margin-bottom: -5vh;
+  }
+
+  .lg\:-ml-marquee{
+    margin-left: -5vh;
   }
 
   .lg\:max-h-full{
@@ -21035,6 +21379,10 @@ a:hover, a:active, a:focus {
     padding: 10vh;
   }
 
+  .lg\:p-marquee{
+    padding: 5vh;
+  }
+
   .lg\:py-0{
     padding-top: 0;
     padding-bottom: 0;
@@ -21243,6 +21591,16 @@ a:hover, a:active, a:focus {
   .lg\:px-header{
     padding-left: 10vh;
     padding-right: 10vh;
+  }
+
+  .lg\:py-marquee{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .lg\:px-marquee{
+    padding-left: 5vh;
+    padding-right: 5vh;
   }
 
   .lg\:pt-0{
@@ -21579,6 +21937,22 @@ a:hover, a:active, a:focus {
 
   .lg\:pl-header{
     padding-left: 10vh;
+  }
+
+  .lg\:pt-marquee{
+    padding-top: 5vh;
+  }
+
+  .lg\:pr-marquee{
+    padding-right: 5vh;
+  }
+
+  .lg\:pb-marquee{
+    padding-bottom: 5vh;
+  }
+
+  .lg\:pl-marquee{
+    padding-left: 5vh;
   }
 
   .lg\:placeholder-transparent::-webkit-input-placeholder{
@@ -23233,6 +23607,10 @@ a:hover, a:active, a:focus {
     width: 10vh;
   }
 
+  .lg\:w-marquee{
+    width: 5vh;
+  }
+
   .lg\:w-1\/2{
     width: 50%;
   }
@@ -24865,6 +25243,10 @@ a:hover, a:active, a:focus {
     height: 10vh;
   }
 
+  .xl\:h-marquee{
+    height: 5vh;
+  }
+
   .xl\:h-full{
     height: 100%;
   }
@@ -24899,6 +25281,10 @@ a:hover, a:active, a:focus {
 
   .xl\:leading-header{
     line-height: 10vh;
+  }
+
+  .xl\:leading-marquee{
+    line-height: 5vh;
   }
 
   .xl\:list-inside{
@@ -25009,6 +25395,10 @@ a:hover, a:active, a:focus {
     margin: 10vh;
   }
 
+  .xl\:m-marquee{
+    margin: 5vh;
+  }
+
   .xl\:-m-1{
     margin: -0.25rem;
   }
@@ -25087,6 +25477,10 @@ a:hover, a:active, a:focus {
 
   .xl\:-m-header{
     margin: -10vh;
+  }
+
+  .xl\:-m-marquee{
+    margin: -5vh;
   }
 
   .xl\:my-0{
@@ -25309,6 +25703,16 @@ a:hover, a:active, a:focus {
     margin-right: 10vh;
   }
 
+  .xl\:my-marquee{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .xl\:mx-marquee{
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+
   .xl\:-my-1{
     margin-top: -0.25rem;
     margin-bottom: -0.25rem;
@@ -25507,6 +25911,16 @@ a:hover, a:active, a:focus {
   .xl\:-mx-header{
     margin-left: -10vh;
     margin-right: -10vh;
+  }
+
+  .xl\:-my-marquee{
+    margin-top: -5vh;
+    margin-bottom: -5vh;
+  }
+
+  .xl\:-mx-marquee{
+    margin-left: -5vh;
+    margin-right: -5vh;
   }
 
   .xl\:mt-0{
@@ -25861,6 +26275,22 @@ a:hover, a:active, a:focus {
     margin-left: 10vh;
   }
 
+  .xl\:mt-marquee{
+    margin-top: 5vh;
+  }
+
+  .xl\:mr-marquee{
+    margin-right: 5vh;
+  }
+
+  .xl\:mb-marquee{
+    margin-bottom: 5vh;
+  }
+
+  .xl\:ml-marquee{
+    margin-left: 5vh;
+  }
+
   .xl\:-mt-1{
     margin-top: -0.25rem;
   }
@@ -26179,6 +26609,22 @@ a:hover, a:active, a:focus {
 
   .xl\:-ml-header{
     margin-left: -10vh;
+  }
+
+  .xl\:-mt-marquee{
+    margin-top: -5vh;
+  }
+
+  .xl\:-mr-marquee{
+    margin-right: -5vh;
+  }
+
+  .xl\:-mb-marquee{
+    margin-bottom: -5vh;
+  }
+
+  .xl\:-ml-marquee{
+    margin-left: -5vh;
   }
 
   .xl\:max-h-full{
@@ -26543,6 +26989,10 @@ a:hover, a:active, a:focus {
     padding: 10vh;
   }
 
+  .xl\:p-marquee{
+    padding: 5vh;
+  }
+
   .xl\:py-0{
     padding-top: 0;
     padding-bottom: 0;
@@ -26751,6 +27201,16 @@ a:hover, a:active, a:focus {
   .xl\:px-header{
     padding-left: 10vh;
     padding-right: 10vh;
+  }
+
+  .xl\:py-marquee{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .xl\:px-marquee{
+    padding-left: 5vh;
+    padding-right: 5vh;
   }
 
   .xl\:pt-0{
@@ -27087,6 +27547,22 @@ a:hover, a:active, a:focus {
 
   .xl\:pl-header{
     padding-left: 10vh;
+  }
+
+  .xl\:pt-marquee{
+    padding-top: 5vh;
+  }
+
+  .xl\:pr-marquee{
+    padding-right: 5vh;
+  }
+
+  .xl\:pb-marquee{
+    padding-bottom: 5vh;
+  }
+
+  .xl\:pl-marquee{
+    padding-left: 5vh;
   }
 
   .xl\:placeholder-transparent::-webkit-input-placeholder{
@@ -28739,6 +29215,10 @@ a:hover, a:active, a:focus {
 
   .xl\:w-header{
     width: 10vh;
+  }
+
+  .xl\:w-marquee{
+    width: 5vh;
   }
 
   .xl\:w-1\/2{

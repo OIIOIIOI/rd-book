@@ -36,6 +36,6 @@
 		}
 	}
 	.marquee-text-wrap {
-		@apply py-2 bg-black text-pink-100;
+		@apply h-marquee leading-marquee bg-black text-pink-100;
 	}
 </style>
