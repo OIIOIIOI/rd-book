@@ -15,15 +15,9 @@
     export default {
         name: "Slide",
         props: {
-            lazy: {
-                required: true,
-            },
-            folder: {
-                required: true,
-            },
-            skater: {
-                required: true,
-            },
+            lazy: { required: true },
+            folder: { required: true },
+            skater: { required: true },
         },
         computed: {
             img_path: function () { return this.folder + this.skater.src },

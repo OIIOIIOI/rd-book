@@ -26,9 +26,7 @@
 	        lazy: true,
         }),
         props: {
-            team: {
-                required: true,
-            },
+            team: { required: true },
         },
         computed: {
             img_path: function () { return 'images/rosters/' + this.team.folder + '/' },
