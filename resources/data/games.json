@@ -1,0 +1,53 @@
+[
+  {
+    "id": 0,
+    "over": true,
+    "title": "Match 1",
+    "time": "12:00",
+    "teams": [
+      {
+        "name": "Les Divines Machines",
+        "city": "Nantes"
+      },
+      {
+        "name": "Les Morues",
+        "city": "Lorient"
+      }
+    ],
+    "scores": [186, 142]
+  },
+  {
+    "id": 1,
+    "over": false,
+    "title": "Match 2",
+    "time": "14:30",
+    "teams": [
+      {
+        "name": "Les Bomb'Hard",
+        "city": "Kemper"
+      },
+      {
+        "name": "Les Pétroleuses",
+        "city": "Caen"
+      }
+    ],
+    "scores": [0, 0]
+  },
+  {
+    "id": 2,
+    "over": false,
+    "title": "Match 3",
+    "time": "17:00",
+    "teams": [
+      {
+        "name": "Toutes Etoiles",
+        "city": "Brest"
+      },
+      {
+        "name": "Les Missfeet",
+        "city": "Le Mans"
+      }
+    ],
+    "scores": [0, 0]
+  }
+]
