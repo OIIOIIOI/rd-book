@@ -1,6 +1,6 @@
 <template>
 	<div class="swiper-slide">
-		<div :id="slide_id" class="swiper-container">
+		<div :id="slide_id" class="swiper-container w-full">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
 					<img class=" w-full h-full object-contain bg-white" :src="logo_path">
@@ -15,6 +15,7 @@
 <script>
     import Swiper from "swiper";
     import Slide from "./Slide";
+    import API from "../../api";
 
     export default {
         name: "Team",
@@ -53,7 +54,6 @@
 
 <style scoped>
 	.swiper-container {
-		width: 100%;
 		height: 85vh;
 	}
 </style>

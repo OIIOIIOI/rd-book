@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div id="teams" class="swiper-container">
+		<div id="teams" class="swiper-container w-full">
 			<div class="swiper-wrapper">
 				<team v-for="team in teams" :key="team.id" :team="team"></team>
 			</div>
@@ -40,7 +40,6 @@
 
 <style scoped>
 	.swiper-container {
-		width: 100%;
 		height: 85vh;
 	}
 </style>

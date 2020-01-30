@@ -1,5 +1,6 @@
 import VueRouter from 'vue-router'
 import routes from './routes'
+import API from "./api";
 
 window._ = require('lodash');
 window.axios = require('axios');
@@ -21,4 +22,3 @@ const app = new Vue({
     el: '#app',
     router,
 });
-

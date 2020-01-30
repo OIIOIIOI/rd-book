@@ -1910,6 +1910,7 @@ module.exports = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_marquee_text_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-marquee-text-component */ "./node_modules/vue-marquee-text-component/dist/MarqueeText.common.js");
 /* harmony import */ var vue_marquee_text_component__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_marquee_text_component__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../api */ "./resources/js/api.js");
 //
 //
 //
@@ -1925,6 +1926,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "AppHeader",
   components: {
@@ -1932,8 +1934,27 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      marqueeLines: __webpack_require__(/*! ../../data/marquee */ "./resources/data/marquee.json")
+      marqueeLines: []
     };
+  },
+  computed: {
+    duration: function duration() {
+      return this.marqueeLines.length * 5;
+    }
+  },
+  mounted: function mounted() {
+    this.getMarquee();
+  },
+  methods: {
+    getMarquee: function getMarquee() {
+      var vm = this;
+      _api__WEBPACK_IMPORTED_MODULE_1__["default"].getMarquee(function (_ref) {
+        var data = _ref.data;
+        vm.marqueeLines = data.lines;
+      });
+
+      _.delay(vm.getMarquee, 60000);
+    }
   }
 });
 
@@ -2106,6 +2127,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/js/swiper.esm.bundle.js");
 /* harmony import */ var _Slide__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Slide */ "./resources/js/components/rosters/Slide.vue");
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../api */ "./resources/js/api.js");
 //
 //
 //
@@ -2120,6 +2142,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2200,7 +2223,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".swiper-container[data-v-65cd68ad] {\n  width: 100%;\n  height: 85vh;\n}\n", ""]);
+exports.push([module.i, ".swiper-container[data-v-65cd68ad] {\n  height: 85vh;\n}\n", ""]);
 
 // exports
 
@@ -2238,7 +2261,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".swiper-container[data-v-7d01ceaf] {\n  width: 100%;\n  height: 85vh;\n}\n", ""]);
+exports.push([module.i, ".swiper-container[data-v-7d01ceaf] {\n  height: 85vh;\n}\n", ""]);
 
 // exports
 
@@ -29809,7 +29832,7 @@ var render = function() {
       _vm._v(" "),
       _c(
         "marquee-text",
-        { attrs: { duration: 15 } },
+        { attrs: { duration: _vm.duration } },
         _vm._l(_vm.marqueeLines, function(line) {
           return _c("span", {
             staticClass: "px-4 border-r-2 border-pink-400",
@@ -29938,21 +29961,25 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "swiper-container", attrs: { id: "teams" } }, [
-      _c(
-        "div",
-        { staticClass: "swiper-wrapper" },
-        _vm._l(_vm.teams, function(team) {
-          return _c("team", { key: team.id, attrs: { team: team } })
-        }),
-        1
-      ),
-      _vm._v(" "),
-      _c("div", {
-        staticClass: "swiper-pagination",
-        attrs: { id: "teams-nav" }
-      })
-    ])
+    _c(
+      "div",
+      { staticClass: "swiper-container w-full", attrs: { id: "teams" } },
+      [
+        _c(
+          "div",
+          { staticClass: "swiper-wrapper" },
+          _vm._l(_vm.teams, function(team) {
+            return _c("team", { key: team.id, attrs: { team: team } })
+          }),
+          1
+        ),
+        _vm._v(" "),
+        _c("div", {
+          staticClass: "swiper-pagination",
+          attrs: { id: "teams-nav" }
+        })
+      ]
+    )
   ])
 }
 var staticRenderFns = []
@@ -30051,7 +30078,7 @@ var render = function() {
   return _c("div", { staticClass: "swiper-slide" }, [
     _c(
       "div",
-      { staticClass: "swiper-container", attrs: { id: _vm.slide_id } },
+      { staticClass: "swiper-container w-full", attrs: { id: _vm.slide_id } },
       [
         _c(
           "div",
@@ -46820,17 +46847,6 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./resources/data/marquee.json":
-/*!*************************************!*\
-  !*** ./resources/data/marquee.json ***!
-  \*************************************/
-/*! exports provided: 0, 1, 2, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("[\"<span class='uppercase font-black'>Score final Match 3 :</span> <span class='font-semibold'>Missfeet 124</span> - 89 Toutes Étoiles\",\"<span class='uppercase font-black'>A suivre :</span> <span class='font-semibold'>14h30</span> - les <span class='font-semibold'>Divines Machines</span> vs les <span class='font-semibold'>Bomb'Hard</span>\",\"<span class='uppercase font-black'>Fin de journée !</span> <span class='font-semibold'>Merci à tou·tes</span> et rendez-vous pour l'<span class='font-semibold'>after à l'Elephant Pub</span>, place d'Alger\"]");
-
-/***/ }),
-
 /***/ "./resources/data/nantes.json":
 /*!************************************!*\
   !*** ./resources/data/nantes.json ***!
@@ -46853,6 +46869,43 @@ module.exports = JSON.parse("{\"id\":0,\"name\":\"Les Bomb'Hard\",\"league\":\"K
 
 /***/ }),
 
+/***/ "./resources/js/api.js":
+/*!*****************************!*\
+  !*** ./resources/js/api.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  call: function call(options, thenCallback, alwaysCallback, errorCallback) {
+    axios(options).then(function (data) {
+      if (thenCallback) thenCallback(data);
+    })["catch"](function (error) {
+      if (error.response) {
+        switch (error.response.status) {
+          case 404:
+            console.warn(error);
+            return;
+        }
+      }
+
+      if (errorCallback) errorCallback(error);
+    }).then(function () {
+      if (alwaysCallback) alwaysCallback();
+    });
+  },
+  getMarquee: function getMarquee(thenCallback) {
+    this.call({
+      method: 'GET',
+      url: '/resources/data/marquee.json?' + new Date().getTime()
+    }, thenCallback);
+  }
+});
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -46864,6 +46917,8 @@ module.exports = JSON.parse("{\"id\":0,\"name\":\"Les Bomb'Hard\",\"league\":\"K
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./routes */ "./resources/js/routes.js");
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./api */ "./resources/js/api.js");
+
 
 
 window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");

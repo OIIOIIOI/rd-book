@@ -6,7 +6,7 @@
 			<router-link to="/aide"><i class="icon ion-md-help"></i></router-link>
 			<router-link to="/rosters"><i class="icon ion-md-contacts"></i></router-link>
 		</div>
-		<marquee-text :duration="15">
+		<marquee-text :duration="duration">
 			<span class="px-4 border-r-2 border-pink-400" v-for="line in marqueeLines" v-html="line"></span>
 		</marquee-text>
 	</div>
@@ -14,6 +14,7 @@
 
 <script>
     import MarqueeText from 'vue-marquee-text-component';
+    import API from "../api";
 
     export default {
         name: "AppHeader",
@@ -21,8 +22,24 @@
             MarqueeText,
         },
         data: () => ({
-            marqueeLines: require('../../data/marquee'),
+            marqueeLines: [],
         }),
+        computed: {
+            duration: function () { return this.marqueeLines.length * 5; },
+        },
+        mounted () {
+            this.getMarquee();
+        },
+	    methods: {
+            getMarquee: function ()
+            {
+                let vm = this;
+                API.getMarquee(({data}) => {
+                    vm.marqueeLines = data.lines;
+                });
+                _.delay(vm.getMarquee, 60000);
+            },
+	    },
     }
 </script>
 
