@@ -45,4 +45,4 @@ module.exports = {
   },
   variants: {},
   plugins: []
-}
+};
