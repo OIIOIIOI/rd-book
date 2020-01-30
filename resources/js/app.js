@@ -20,9 +20,6 @@ Vue.component('app-header', require('./components/AppHeader').default);
 const app = new Vue({
     el: '#app',
     router,
-    data: {
-        message: 'Hello Vue!'
-    }
 });
 
 /*const $ = require('jquery');

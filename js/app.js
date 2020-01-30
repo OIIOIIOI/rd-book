@@ -45433,8 +45433,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Roller Derby\Events\2020_02_0102_N2_LeMans\Livret\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\Roller Derby\Events\2020_02_0102_N2_LeMans\Livret\resources\css\style.css */"./resources/css/style.css");
+__webpack_require__(/*! /var/www/rd-book/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /var/www/rd-book/resources/css/style.css */"./resources/css/style.css");
 
 
 /***/ })
