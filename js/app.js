@@ -30079,7 +30079,7 @@ var render = function() {
     [
       _c("h1", { staticClass: "uppercase mt-6" }, [_vm._v("Infos pratiques")]),
       _vm._v(" "),
-      _c("h2", { staticClass: "mt-8" }, [_vm._v("Où ?")]),
+      _vm._m(0),
       _vm._v(" "),
       _c("h3", { staticClass: "text-pink-400 mt-4 mb-1" }, [
         _vm._v("Gymnase du SUAPS")
@@ -30089,29 +30089,29 @@ var render = function() {
         _vm._v("Université du Maine")
       ]),
       _vm._v(" "),
-      _vm._m(0),
+      _vm._m(1),
       _vm._v(" "),
-      _c("h2", { staticClass: "mt-8" }, [_vm._v("Quand ?")]),
+      _vm._m(2),
       _vm._v(" "),
       _c("h3", { staticClass: "text-pink-400 mt-4 mb-2" }, [
         _vm._v("Samedi 1er février")
       ]),
       _vm._v(" "),
-      _vm._m(1),
-      _vm._v(" "),
-      _vm._m(2),
-      _vm._v(" "),
       _vm._m(3),
-      _vm._v(" "),
-      _c("h3", { staticClass: "text-pink-400 mt-4 mb-2" }, [
-        _vm._v("Dimanche 2 février")
-      ]),
       _vm._v(" "),
       _vm._m(4),
       _vm._v(" "),
       _vm._m(5),
       _vm._v(" "),
+      _c("h3", { staticClass: "text-pink-400 mt-4 mb-2" }, [
+        _vm._v("Dimanche 2 février")
+      ]),
+      _vm._v(" "),
       _vm._m(6),
+      _vm._v(" "),
+      _vm._m(7),
+      _vm._v(" "),
+      _vm._m(8),
       _vm._v(" "),
       _c(
         "router-link",
@@ -30123,6 +30123,15 @@ var render = function() {
   )
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h2", { staticClass: "mt-8" }, [
+      _c("i", { staticClass: "icon ion-md-pin mr-2" }),
+      _vm._v("Où ?")
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -30142,6 +30151,15 @@ var staticRenderFns = [
         _vm._v("72000 Le Mans")
       ]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h2", { staticClass: "mt-8" }, [
+      _c("i", { staticClass: "icon ion-md-time mr-2" }),
+      _vm._v("Quand ?")
+    ])
   },
   function() {
     var _vm = this
