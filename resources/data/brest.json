@@ -2,7 +2,27 @@
   "id": 2929,
   "name": "Toutes Étoiles",
   "roster": [
-    { "number": "#", "name": "", "src": ".jpg"}
+    { "number": "#0527", "name": "Lou Styx", "src": "0527.jpg"},
+    { "number": "#11", "name": "Nikita Bass", "src": "11.jpg"},
+    { "number": "#133", "name": "La BAF", "src": "133.jpg"},
+    { "number": "#153", "name": "Gainzbarge", "src": "empty.jpg"},
+    { "number": "#171", "name": "Poufsoufre", "src": "171.jpg"},
+    { "number": "#22", "name": "IKËA", "src": "22.jpg"},
+    { "number": "#23", "name": "Scarlet Me Die", "src": "23.jpg"},
+    { "number": "#313", "name": "Diwall", "src": "empty.jpg"},
+    { "number": "#41", "name": "Terror Key", "src": "41.jpg"},
+    { "number": "#5", "name": "Frifight", "src": "5.jpg"},
+    { "number": "#501", "name": "Emma Female", "src": "empty.jpg"},
+    { "number": "#52", "name": "Copter", "src": "52.jpg"},
+    { "number": "#618", "name": "Cécé Lérate", "src": "618.jpg"},
+    { "number": "#62", "name": "Big Head", "src": "empty.jpg"},
+    { "number": "#71", "name": "Dr Justice", "src": "empty.jpg"},
+    { "number": "#829", "name": "Penn Dirollet", "src": "empty.jpg"},
+    { "number": "#85", "name": "Lily Gature", "src": "85.jpg"},
+    { "number": "#9", "name": "Artistic Quinn", "src": "empty.jpg"},
+    { "number": "#93", "name": "A Base De", "src": "93.jpg"},
+    { "number": "#999", "name": "Torpenn", "src": "empty.jpg"},
+    { "number": "Bench", "name": "Jesus Crust", "src": "empty.jpg"}
   ],
   "folder": "brest"
 }
