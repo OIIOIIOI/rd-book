@@ -3,13 +3,21 @@
 		<p class="text-center font-semibold">
 			<span class="text-xl">{{ game.title }}</span> - <span class="text-pink-600 text-2xl">{{ game.time }}</span>
 		</p>
-		<p class="team-a"><span class="font-semibold text-pink-600 text-lg">{{ game.teams[0].name }}</span> (<span class="">{{ game.teams[0].city }}</span>)</p>
+		<p class="team-a">
+			<i v-if="teamAWon" class="icon ion-md-star text-pink-400 text-xl mr-1"></i>
+			<span class="font-semibold text-pink-600 text-lg">{{ game.teams[0].name }}</span> (<span class="">{{ game.teams[0].city }}</span>)
+			<i v-if="teamAWon" class="icon ion-md-star text-pink-400 text-xl ml-1"></i>
+		</p>
 		<p class="text-center flex items-center justify-center">
 			<span class="font-black text-2xl text-pink-400" v-if="game.over">{{ game.scores[0] }}</span>
 			<span class="text-sm mx-2">-vs-</span>
 			<span class="font-black text-2xl text-pink-400" v-if="game.over">{{ game.scores[1] }}</span>
 		</p>
-		<p class="team-b"><span class="font-semibold text-pink-600 text-lg">{{ game.teams[1].name }}</span> (<span class="">{{ game.teams[1].city }}</span>)</p>
+		<p class="team-b">
+			<i v-if="teamBWon" class="icon ion-md-star text-pink-400 text-xl mr-1"></i>
+			<span class="font-semibold text-pink-600 text-lg">{{ game.teams[1].name }}</span> (<span class="">{{ game.teams[1].city }}</span>)
+			<i v-if="teamBWon" class="icon ion-md-star text-pink-400 text-xl ml-1"></i>
+		</p>
 	</section>
 </template>
 
@@ -26,6 +34,12 @@
                 if (this.game.id === 1) a.push('is-current');
                 return a.join(' ');
             },
+            teamAWon: function () {
+                return this.game.scores[0] > this.game.scores[1];
+            },
+            teamBWon: function () {
+                return this.game.scores[1] > this.game.scores[0];
+            }
         },
     }
 </script>

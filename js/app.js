@@ -2110,6 +2110,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Game",
   props: {
@@ -2123,6 +2131,12 @@ __webpack_require__.r(__webpack_exports__);
       if (this.game.over) a.push('is-over');
       if (this.game.id === 1) a.push('is-current');
       return a.join(' ');
+    },
+    teamAWon: function teamAWon() {
+      return this.game.scores[0] > this.game.scores[1];
+    },
+    teamBWon: function teamBWon() {
+      return this.game.scores[1] > this.game.scores[0];
     }
   }
 });
@@ -30149,12 +30163,23 @@ var render = function() {
     ]),
     _vm._v(" "),
     _c("p", { staticClass: "team-a" }, [
+      _vm.teamAWon
+        ? _c("i", {
+            staticClass: "icon ion-md-star text-pink-400 text-xl mr-1"
+          })
+        : _vm._e(),
+      _vm._v(" "),
       _c("span", { staticClass: "font-semibold text-pink-600 text-lg" }, [
         _vm._v(_vm._s(_vm.game.teams[0].name))
       ]),
       _vm._v(" ("),
       _c("span", {}, [_vm._v(_vm._s(_vm.game.teams[0].city))]),
-      _vm._v(")")
+      _vm._v(")\n\t\t"),
+      _vm.teamAWon
+        ? _c("i", {
+            staticClass: "icon ion-md-star text-pink-400 text-xl ml-1"
+          })
+        : _vm._e()
     ]),
     _vm._v(" "),
     _c("p", { staticClass: "text-center flex items-center justify-center" }, [
@@ -30174,12 +30199,23 @@ var render = function() {
     ]),
     _vm._v(" "),
     _c("p", { staticClass: "team-b" }, [
+      _vm.teamBWon
+        ? _c("i", {
+            staticClass: "icon ion-md-star text-pink-400 text-xl mr-1"
+          })
+        : _vm._e(),
+      _vm._v(" "),
       _c("span", { staticClass: "font-semibold text-pink-600 text-lg" }, [
         _vm._v(_vm._s(_vm.game.teams[1].name))
       ]),
       _vm._v(" ("),
       _c("span", {}, [_vm._v(_vm._s(_vm.game.teams[1].city))]),
-      _vm._v(")")
+      _vm._v(")\n\t\t"),
+      _vm.teamBWon
+        ? _c("i", {
+            staticClass: "icon ion-md-star text-pink-400 text-xl ml-1"
+          })
+        : _vm._e()
     ])
   ])
 }
