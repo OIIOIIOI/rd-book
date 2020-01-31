@@ -1976,6 +1976,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Home"
 });
@@ -30023,7 +30024,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("h1", { staticClass: "text-center mt-6" }, [_vm._v("ACCUEIL")])
+      _c("h1", { staticClass: "text-center mt-6" }, [_vm._v("ACCUEIL")]),
+      _vm._v(" "),
+      _c("h2", { staticClass: "text-center mt-6" }, [_vm._v("Affiche")])
     ])
   }
 ]
