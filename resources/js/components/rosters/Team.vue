@@ -24,7 +24,7 @@
         },
         data: () => ({
 	        sw: null,
-	        lazy: false,
+	        lazy: true,
         }),
         props: {
             team: { required: true },
