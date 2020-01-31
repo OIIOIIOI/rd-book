@@ -5,7 +5,7 @@
 		<img v-if="!lazy" :src="img_path">
 		<div class="absolute bottom-0 left-0 w-full flex items-center px-6 py-4 text-white">
 			<div class="absolute top-0 left-0 w-full h-full bg-pink-900 opacity-90"></div>
-			<span class="relative font-sans font-black text-3xl leading-none mr-4">{{ skater.number }}</span>
+			<span class="relative font-sans font-black text-3xl leading-none whitespace-no-wrap mr-4">{{ skater.number }}</span>
 			<span class="relative font-sans font-semibold text-2xl leading-none">{{ skater.name }}</span>
 		</div>
 	</div>

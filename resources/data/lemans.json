@@ -1,0 +1,46 @@
+{
+  "id": 0,
+  "name": "Les Missfeet",
+  "league": "Roller Derby 72",
+  "roster": [
+    { "number": "#123", "name": "Jacky Chan", "src": "A_16_clear.jpg"},
+    { "number": "#126", "name": "L'InstiCat'rice", "src": "A_126_clear.jpg"},
+    { "number": "#17", "name": "Ju The Kid", "src": "A_17_clear.jpg"},
+    { "number": "#171", "name": "LuCette", "src": "A_171_clear.jpg"},
+    { "number": "#19", "name": "L'Amère Michel", "src": "A_19_clear.jpg"},
+    { "number": "#21", "name": "Wild Purple", "src": "A_21_clear.jpg"},
+    { "number": "#215", "name": "Pathé du diable", "src": "A_215_clear.jpg"},
+    { "number": "#26", "name": "Progr'Hammer", "src": "A_26_clear.jpg"},
+    { "number": "#333", "name": "MafalDeath", "src": "A_333_clear.jpg"},
+    { "number": "#4", "name": "Verge Folle", "src": "A_4_clear.jpg"},
+    { "number": "#456", "name": "Maud'Hit", "src": "A_28_clear.jpg"},
+    { "number": "#75", "name": "Madame Moustache", "src": "A_75_clear.jpg"},
+    { "number": "#77", "name": "Malka Red Thatcher", "src": "A_77_clear.jpg"},
+    { "number": "#817", "name": "La Camibale", "src": "A_817_clear.jpg"},
+    { "number": "#82", "name": "Tchou'Baka", "src": "A_82_clear.jpg"},
+    { "number": "#87", "name": "Glory Owl", "src": "A_87_clear.jpg"},
+    { "number": "#95", "name": "BoobZilla", "src": "A_95_clear.jpg"},
+    { "number": "#99", "name": "Ellen Ripe-Les", "src": "A_99_clear.jpg"},
+    { "number": "Bench", "name": "Monsieur Moustache", "src": "A_Bench_clear.jpg"},
+    { "number": "Line-up", "name": "Denise Brogniasse", "src": "A_Lineup_clear.jpg"},
+    { "number": "Line-up", "name": "Zob Rombie", "src": "A_Lineup2_clear.jpg"}
+  ],
+  "folder": "lemans"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
