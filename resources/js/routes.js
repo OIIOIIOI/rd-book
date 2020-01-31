@@ -2,6 +2,7 @@ import Home from "./components/Home";
 import Program from "./components/Program";
 import Infos from "./components/Infos";
 import Rosters from "./components/Rosters";
+import Rules from "./components/Rules";
 
 export default [
     {
@@ -15,13 +16,18 @@ export default [
         component: Program,
     },
     {
-        name: 'infos',
-        path: '/infos',
-        component: Infos,
-    },
-    {
         name: 'rosters',
         path: '/rosters',
         component: Rosters,
+    },
+    {
+        name: 'rules',
+        path: '/rules',
+        component: Rules,
+    },
+    {
+        name: 'infos',
+        path: '/infos',
+        component: Infos,
     },
 ]

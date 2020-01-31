@@ -59,7 +59,7 @@
 			@apply opacity-50;
 		}
 		&.is-current {
-			@apply border-pink-400 border-l-8 border-r-8;
+			@apply border-pink-400 border-l-12 border-r-12;
 		}
 	}
 </style>

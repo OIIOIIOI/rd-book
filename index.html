@@ -9,9 +9,9 @@
 	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-gray-200 text-pink-900">
-	<div id="app">
-		<app-header></app-header>
+<body class="font-sans bg-gray-900 text-pink-900">
+	<div id="app" class="relative w-full sm:max-w-sm sm:mx-auto bg-gray-200">
+		<app-header class="w-full sm:max-w-sm sm:mx-auto"></app-header>
 		<main class="relative">
 			<router-view :key="$route.fullPath"></router-view>
 		</main>

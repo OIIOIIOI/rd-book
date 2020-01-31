@@ -43,6 +43,13 @@ module.exports = {
         'header': '10vh',
         'marquee': '5vh',
       },
+      borderWidth: {
+        '12': '12px',
+        '16': '16px',
+      },
+      maxWidth: {
+        'sm': '640px',
+      },
     }
   },
   variants: {},

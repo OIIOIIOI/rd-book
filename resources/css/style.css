@@ -6,9 +6,6 @@
 
 @import "swiper/css/swiper.min.css";
 
-body {
-    @apply font-sans;
-}
 h1 {
     @apply font-sans font-black text-3xl leading-none;
 }
@@ -27,6 +24,7 @@ a {
 #app {
     main {
         padding-top: 15vh;
+        min-height: 100vh;
     }
 }
 #app-header {
