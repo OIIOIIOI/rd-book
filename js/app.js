@@ -47708,7 +47708,17 @@ Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]);
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
   linkActiveClass: 'active',
   linkExactActiveClass: 'exact-active',
-  routes: _routes__WEBPACK_IMPORTED_MODULE_1__["default"]
+  routes: _routes__WEBPACK_IMPORTED_MODULE_1__["default"],
+  scrollBehavior: function scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    }
+
+    return {
+      x: 0,
+      y: 0
+    };
+  }
 }); // Base components -----------
 
 Vue.component('app-header', __webpack_require__(/*! ./components/AppHeader */ "./resources/js/components/AppHeader.vue")["default"]);
