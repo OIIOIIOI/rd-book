@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<h1 class="text-center mt-6">ACCUEIL</h1>
-		<h2 class="text-center mt-6">Affiche</h2>
+		<img class="w-full" src="images/N2E2.jpg" alt="Affiche N2 Le Mans">
+		<p class="text-center text-xs py-1">Affiche par <span class="font-semibold">Solène Gaudin</span></p>
 	</div>
 </template>
 

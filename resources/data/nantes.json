@@ -28,6 +28,5 @@
     { "number": "Line-up", "name": "Balle Affreuse", "src": "empty.jpg" },
     { "number": "Line-up", "name": "Sang Tuerie", "src": "empty.jpg" }
   ],
-  "folder": "nantes",
-  "swiper": false
+  "folder": "nantes"
 }

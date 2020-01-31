@@ -2070,7 +2070,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      teams: [__webpack_require__(/*! ../../data/quimper */ "./resources/data/quimper.json"), __webpack_require__(/*! ../../data/nantes */ "./resources/data/nantes.json")]
+      teams: [__webpack_require__(/*! ../../data/quimper */ "./resources/data/quimper.json"), __webpack_require__(/*! ../../data/nantes */ "./resources/data/nantes.json"), __webpack_require__(/*! ../../data/officiels */ "./resources/data/officiels.json")]
     };
   },
   created: function created() {
@@ -2248,7 +2248,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       sw: null,
-      lazy: true
+      lazy: false
     };
   },
   props: {
@@ -30024,9 +30024,15 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("h1", { staticClass: "text-center mt-6" }, [_vm._v("ACCUEIL")]),
+      _c("img", {
+        staticClass: "w-full",
+        attrs: { src: "images/N2E2.jpg", alt: "Affiche N2 Le Mans" }
+      }),
       _vm._v(" "),
-      _c("h2", { staticClass: "text-center mt-6" }, [_vm._v("Affiche")])
+      _c("p", { staticClass: "text-center text-xs py-1" }, [
+        _vm._v("Affiche par "),
+        _c("span", { staticClass: "font-semibold" }, [_vm._v("Solène Gaudin")])
+      ])
     ])
   }
 ]
@@ -47161,10 +47167,21 @@ module.exports = JSON.parse("[{\"date\":\"Samedi 1er février\",\"games\":[{\"id
 /*!************************************!*\
   !*** ./resources/data/nantes.json ***!
   \************************************/
-/*! exports provided: id, name, league, roster, folder, swiper, default */
+/*! exports provided: id, name, league, roster, folder, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"id\":1,\"name\":\"Les Divines Machines\",\"league\":\"Nantes Derby Girls\",\"roster\":[{\"number\":\"#007\",\"name\":\"Ju Gueule Speed\",\"src\":\"007.jpg\"},{\"number\":\"#111\",\"name\":\"Crash Volta\",\"src\":\"111.jpg\"},{\"number\":\"#113\",\"name\":\"Colakov\",\"src\":\"empty.jpg\"},{\"number\":\"#1312\",\"name\":\"Plaisir d'Offrir\",\"src\":\"empty.jpg\"},{\"number\":\"#16\",\"name\":\"Vivienne Westblood\",\"src\":\"16.jpg\"},{\"number\":\"#1718\",\"name\":\"Bonnie Demonia\",\"src\":\"1718.jpg\"},{\"number\":\"#1932\",\"name\":\"Spontex\",\"src\":\"empty.jpg\"},{\"number\":\"#212\",\"name\":\"Juno Future\",\"src\":\"212.jpg\"},{\"number\":\"#2215\",\"name\":\"Major Storm\",\"src\":\"2215.jpg\"},{\"number\":\"#232\",\"name\":\"Barracuda\",\"src\":\"232.jpg\"},{\"number\":\"#27\",\"name\":\"Tichatte\",\"src\":\"empty.jpg\"},{\"number\":\"#33\",\"name\":\"Oh là là\",\"src\":\"33.jpg\"},{\"number\":\"#411\",\"name\":\"SeaScape\",\"src\":\"411.jpg\"},{\"number\":\"#456\",\"name\":\"Hache Tag Joe\",\"src\":\"empty.jpg\"},{\"number\":\"#601\",\"name\":\"Evy C Raptor\",\"src\":\"601.jpg\"},{\"number\":\"#729\",\"name\":\"Gipsy Queen\",\"src\":\"empty.jpg\"},{\"number\":\"#73\",\"name\":\"Loki d'or\",\"src\":\"73.jpg\"},{\"number\":\"#789\",\"name\":\"Nuf\",\"src\":\"empty.jpg\"},{\"number\":\"#91\",\"name\":\"Cannibal Rider\",\"src\":\"91.jpg\"},{\"number\":\"#92\",\"name\":\"Dory Fist\",\"src\":\"92.jpg\"},{\"number\":\"Bench\",\"name\":\"Christo Bee\",\"src\":\"bench.jpg\"},{\"number\":\"Bench\",\"name\":\"Cass'Burn\",\"src\":\"empty.jpg\"},{\"number\":\"Line-up\",\"name\":\"Balle Affreuse\",\"src\":\"empty.jpg\"},{\"number\":\"Line-up\",\"name\":\"Sang Tuerie\",\"src\":\"empty.jpg\"}],\"folder\":\"nantes\",\"swiper\":false}");
+module.exports = JSON.parse("{\"id\":1,\"name\":\"Les Divines Machines\",\"league\":\"Nantes Derby Girls\",\"roster\":[{\"number\":\"#007\",\"name\":\"Ju Gueule Speed\",\"src\":\"007.jpg\"},{\"number\":\"#111\",\"name\":\"Crash Volta\",\"src\":\"111.jpg\"},{\"number\":\"#113\",\"name\":\"Colakov\",\"src\":\"empty.jpg\"},{\"number\":\"#1312\",\"name\":\"Plaisir d'Offrir\",\"src\":\"empty.jpg\"},{\"number\":\"#16\",\"name\":\"Vivienne Westblood\",\"src\":\"16.jpg\"},{\"number\":\"#1718\",\"name\":\"Bonnie Demonia\",\"src\":\"1718.jpg\"},{\"number\":\"#1932\",\"name\":\"Spontex\",\"src\":\"empty.jpg\"},{\"number\":\"#212\",\"name\":\"Juno Future\",\"src\":\"212.jpg\"},{\"number\":\"#2215\",\"name\":\"Major Storm\",\"src\":\"2215.jpg\"},{\"number\":\"#232\",\"name\":\"Barracuda\",\"src\":\"232.jpg\"},{\"number\":\"#27\",\"name\":\"Tichatte\",\"src\":\"empty.jpg\"},{\"number\":\"#33\",\"name\":\"Oh là là\",\"src\":\"33.jpg\"},{\"number\":\"#411\",\"name\":\"SeaScape\",\"src\":\"411.jpg\"},{\"number\":\"#456\",\"name\":\"Hache Tag Joe\",\"src\":\"empty.jpg\"},{\"number\":\"#601\",\"name\":\"Evy C Raptor\",\"src\":\"601.jpg\"},{\"number\":\"#729\",\"name\":\"Gipsy Queen\",\"src\":\"empty.jpg\"},{\"number\":\"#73\",\"name\":\"Loki d'or\",\"src\":\"73.jpg\"},{\"number\":\"#789\",\"name\":\"Nuf\",\"src\":\"empty.jpg\"},{\"number\":\"#91\",\"name\":\"Cannibal Rider\",\"src\":\"91.jpg\"},{\"number\":\"#92\",\"name\":\"Dory Fist\",\"src\":\"92.jpg\"},{\"number\":\"Bench\",\"name\":\"Christo Bee\",\"src\":\"bench.jpg\"},{\"number\":\"Bench\",\"name\":\"Cass'Burn\",\"src\":\"empty.jpg\"},{\"number\":\"Line-up\",\"name\":\"Balle Affreuse\",\"src\":\"empty.jpg\"},{\"number\":\"Line-up\",\"name\":\"Sang Tuerie\",\"src\":\"empty.jpg\"}],\"folder\":\"nantes\"}");
+
+/***/ }),
+
+/***/ "./resources/data/officiels.json":
+/*!***************************************!*\
+  !*** ./resources/data/officiels.json ***!
+  \***************************************/
+/*! exports provided: id, name, league, roster, folder, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"id\":999,\"name\":\"les Officiel·les\",\"league\":\"\",\"roster\":[{\"number\":\"\",\"name\":\"Obearwan\",\"src\":\"refs/oberwan.jpg\"},{\"number\":\"\",\"name\":\"Doctor Justice\",\"src\":\"refs/justice.jpg\"},{\"number\":\"\",\"name\":\"Vagina Dentata\",\"src\":\"refs/vagina.jpg\"},{\"number\":\"\",\"name\":\"Obéix\",\"src\":\"refs/obeix.jpg\"},{\"number\":\"\",\"name\":\"Cec Tape\",\"src\":\"refs/cectape.jpg\"},{\"number\":\"\",\"name\":\"Stallone\",\"src\":\"refs/stallone.jpg\"},{\"number\":\"\",\"name\":\"Yuri\",\"src\":\"refs/yuri.jpg\"},{\"number\":\"\",\"name\":\"Ötzi\",\"src\":\"refs/otzi.jpg\"},{\"number\":\"\",\"name\":\"Big'horner\",\"src\":\"refs/bighorner.jpg\"},{\"number\":\"\",\"name\":\"Joseph Praline\",\"src\":\"refs/praline.jpg\"},{\"number\":\"\",\"name\":\"Couette-Couette\",\"src\":\"refs/couettecouette.jpg\"},{\"number\":\"\",\"name\":\"Nope\",\"src\":\"refs/nope.jpg\"},{\"number\":\"\",\"name\":\"John Lee Hook-her\",\"src\":\"refs/johnleehooker.jpg\"},{\"number\":\"\",\"name\":\"Sueur Sourire\",\"src\":\"nso/sueursourire.jpg\"},{\"number\":\"\",\"name\":\"HP Lovetrack\",\"src\":\"nso/hp.jpg\"},{\"number\":\"\",\"name\":\"Bender\",\"src\":\"nso/bender.jpg\"},{\"number\":\"\",\"name\":\"Mogwai\",\"src\":\"nso/mogwai.jpg\"},{\"number\":\"\",\"name\":\"Skoumoun\",\"src\":\"nso/skoumoun.jpg\"},{\"number\":\"\",\"name\":\"Tibob\",\"src\":\"nso/tibob.jpg\"},{\"number\":\"\",\"name\":\"Cunigonde\",\"src\":\"nso/cunigonde.jpg\"},{\"number\":\"\",\"name\":\"Sagygotte\",\"src\":\"nso/sagygotte.jpg\"},{\"number\":\"\",\"name\":\"Miches Lorraines\",\"src\":\"nso/miches.jpg\"},{\"number\":\"\",\"name\":\"Gaufrette\",\"src\":\"nso/gaufrette.jpg\"},{\"number\":\"\",\"name\":\"Bernik Tareum\",\"src\":\"nso/bernik.jpg\"},{\"number\":\"\",\"name\":\"Paf! La Mouette\",\"src\":\"nso/paf.jpg\"},{\"number\":\"\",\"name\":\"Cook's Attack\",\"src\":\"nso/cooks.jpg\"},{\"number\":\"\",\"name\":\"Jenah la Guerrière\",\"src\":\"nso/jenah.jpg\"},{\"number\":\"\",\"name\":\"L'Aff'Amé\",\"src\":\"nso/laffame.jpg\"},{\"number\":\"\",\"name\":\"Reb'Hell\",\"src\":\"nso/rebhell.jpg\"},{\"number\":\"\",\"name\":\"Kit Krack\",\"src\":\"nso/kit.jpg\"},{\"number\":\"\",\"name\":\"Batsouille\",\"src\":\"nso/batsouille.jpg\"},{\"number\":\"\",\"name\":\"Mortal Caillou\",\"src\":\"nso/mortal.jpg\"}],\"folder\":\"officiels\"}");
 
 /***/ }),
 
@@ -47172,10 +47189,10 @@ module.exports = JSON.parse("{\"id\":1,\"name\":\"Les Divines Machines\",\"leagu
 /*!*************************************!*\
   !*** ./resources/data/quimper.json ***!
   \*************************************/
-/*! exports provided: id, name, league, roster, folder, swiper, default */
+/*! exports provided: id, name, league, roster, folder, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"id\":0,\"name\":\"Les Bomb'Hard\",\"league\":\"Kemper Roller Derby\",\"roster\":[{\"number\":\"#111\",\"name\":\"La Véroce\",\"src\":\"111.jpg\"},{\"number\":\"#14\",\"name\":\"Red Plague\",\"src\":\"14.jpg\"},{\"number\":\"#1404\",\"name\":\"Crash Pest\",\"src\":\"1404.jpg\"},{\"number\":\"#1664\",\"name\":\"Lara Kro\",\"src\":\"1664.jpg\"},{\"number\":\"#20\",\"name\":\"L'Exécutricks\",\"src\":\"20.jpg\"},{\"number\":\"#27\",\"name\":\"L'attire Aïe\",\"src\":\"27.jpg\"},{\"number\":\"#28\",\"name\":\"l'Alb'Atroce\",\"src\":\"28.jpg\"},{\"number\":\"#3\",\"name\":\"Bigoud'haine\",\"src\":\"3.jpg\"},{\"number\":\"#31\",\"name\":\"Catcha Mama\",\"src\":\"31.jpg\"},{\"number\":\"#319\",\"name\":\"AmberBAM\",\"src\":\"319.jpg\"},{\"number\":\"#42\",\"name\":\"LaRouste\",\"src\":\"42.jpg\"},{\"number\":\"#447\",\"name\":\"Ana Kedavra\",\"src\":\"447.jpg\"},{\"number\":\"#522\",\"name\":\"MECHANIKLA\",\"src\":\"522.jpg\"},{\"number\":\"#53\",\"name\":\"BombNath'omik\",\"src\":\"53.jpg\"},{\"number\":\"#613\",\"name\":\"Moul'fight\",\"src\":\"613.jpg\"},{\"number\":\"#669\",\"name\":\"CrossBones\",\"src\":\"669.jpg\"},{\"number\":\"#780\",\"name\":\"Pussy Shake\",\"src\":\"empty.jpg\"},{\"number\":\"#8\",\"name\":\"Gipsy Fury\",\"src\":\"8.jpg\"},{\"number\":\"#856\",\"name\":\"Startijenn\",\"src\":\"856.jpg\"},{\"number\":\"Bench\",\"name\":\"Kronik\",\"src\":\"bench.jpg\"},{\"number\":\"Line-up\",\"name\":\"Zig'oto\",\"src\":\"lineup1.jpg\"},{\"number\":\"Line-up\",\"name\":\"Dirty Princess\",\"src\":\"empty.jpg\"}],\"folder\":\"quimper\",\"swiper\":false}");
+module.exports = JSON.parse("{\"id\":0,\"name\":\"Les Bomb'Hard\",\"league\":\"Kemper Roller Derby\",\"roster\":[{\"number\":\"#111\",\"name\":\"La Véroce\",\"src\":\"111.jpg\"},{\"number\":\"#14\",\"name\":\"Red Plague\",\"src\":\"14.jpg\"},{\"number\":\"#1404\",\"name\":\"Crash Pest\",\"src\":\"1404.jpg\"},{\"number\":\"#1664\",\"name\":\"Lara Kro\",\"src\":\"1664.jpg\"},{\"number\":\"#20\",\"name\":\"L'Exécutricks\",\"src\":\"20.jpg\"},{\"number\":\"#27\",\"name\":\"L'attire Aïe\",\"src\":\"27.jpg\"},{\"number\":\"#28\",\"name\":\"l'Alb'Atroce\",\"src\":\"28.jpg\"},{\"number\":\"#3\",\"name\":\"Bigoud'haine\",\"src\":\"3.jpg\"},{\"number\":\"#31\",\"name\":\"Catcha Mama\",\"src\":\"31.jpg\"},{\"number\":\"#319\",\"name\":\"AmberBAM\",\"src\":\"319.jpg\"},{\"number\":\"#42\",\"name\":\"LaRouste\",\"src\":\"42.jpg\"},{\"number\":\"#447\",\"name\":\"Ana Kedavra\",\"src\":\"447.jpg\"},{\"number\":\"#522\",\"name\":\"MECHANIKLA\",\"src\":\"522.jpg\"},{\"number\":\"#53\",\"name\":\"BombNath'omik\",\"src\":\"53.jpg\"},{\"number\":\"#613\",\"name\":\"Moul'fight\",\"src\":\"613.jpg\"},{\"number\":\"#669\",\"name\":\"CrossBones\",\"src\":\"669.jpg\"},{\"number\":\"#780\",\"name\":\"Pussy Shake\",\"src\":\"empty.jpg\"},{\"number\":\"#8\",\"name\":\"Gipsy Fury\",\"src\":\"8.jpg\"},{\"number\":\"#856\",\"name\":\"Startijenn\",\"src\":\"856.jpg\"},{\"number\":\"Bench\",\"name\":\"Kronik\",\"src\":\"bench.jpg\"},{\"number\":\"Line-up\",\"name\":\"Zig'oto\",\"src\":\"lineup1.jpg\"},{\"number\":\"Line-up\",\"name\":\"Dirty Princess\",\"src\":\"empty.jpg\"}],\"folder\":\"quimper\"}");
 
 /***/ }),
 

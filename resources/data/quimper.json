@@ -26,6 +26,5 @@
     { "number": "Line-up", "name": "Zig'oto", "src": "lineup1.jpg"} ,
     { "number": "Line-up", "name": "Dirty Princess", "src": "empty.jpg" }
   ],
-  "folder": "quimper",
-  "swiper": false
+  "folder": "quimper"
 }

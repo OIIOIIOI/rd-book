@@ -22,6 +22,7 @@
             teams: [
                 require('../../data/quimper'),
                 require('../../data/nantes'),
+                require('../../data/officiels'),
             ],
         }),
         created ()
