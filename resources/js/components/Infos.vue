@@ -27,7 +27,7 @@
 		<p class="text-lg"><i class="icon ion-md-beer text-pink-400 mr-2"></i>Buvette/Snack *</p>
 		<p class="text-lg"><i class="icon ion-md-shirt text-pink-400 mr-2"></i>Merch *</p>
 		<p class="text-lg"><i class="icon ion-md-microphone text-pink-400 mr-2"></i>Commentaires en direct</p>
-		<p class="text-lg"><i class="icon ion-md-videocam text-pink-400 mr-2"></i>Livestream</p>
+		<p class="text-lg"><i class="icon ion-md-videocam text-pink-400 mr-2"></i><a href="https://www.youtube.com/channel/UCCAIZYuMmGPK_xwBAtjrIxw" target="_blank">Livestream</a></p>
 		<p class="text-sm mt-2">* <i class="icon ion-md-card text-pink-400 mr-1"></i>CB acceptée</p>
 	</div>
 </template>
