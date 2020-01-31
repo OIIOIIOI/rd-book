@@ -1998,6 +1998,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Infos"
 });
@@ -30023,7 +30039,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
+    return _c("div", { staticClass: "pb-4" }, [
       _c("img", {
         staticClass: "w-full",
         attrs: { src: "images/N2E2.jpg", alt: "Affiche N2 Le Mans" }
@@ -30057,15 +30073,128 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    { staticClass: "text-center pb-8" },
+    [
+      _c("h1", { staticClass: "uppercase mt-6" }, [_vm._v("Infos pratiques")]),
+      _vm._v(" "),
+      _c("h2", { staticClass: "mt-8" }, [_vm._v("Où ?")]),
+      _vm._v(" "),
+      _c("h3", { staticClass: "text-pink-400 mt-4 mb-1" }, [
+        _vm._v("Gymnase du SUAPS")
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "font-semibold" }, [
+        _vm._v("Université du Maine")
+      ]),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _c("h2", { staticClass: "mt-8" }, [_vm._v("Quand ?")]),
+      _vm._v(" "),
+      _c("h3", { staticClass: "text-pink-400 mt-4 mb-2" }, [
+        _vm._v("Samedi 1er février")
+      ]),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _vm._m(2),
+      _vm._v(" "),
+      _vm._m(3),
+      _vm._v(" "),
+      _c("h3", { staticClass: "text-pink-400 mt-4 mb-2" }, [
+        _vm._v("Dimanche 2 février")
+      ]),
+      _vm._v(" "),
+      _vm._m(4),
+      _vm._v(" "),
+      _vm._m(5),
+      _vm._v(" "),
+      _vm._m(6),
+      _vm._v(" "),
+      _c(
+        "router-link",
+        { staticClass: "block mt-4", attrs: { to: "/programme" } },
+        [_vm._v("Voir le programme complet")]
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("h1", { staticClass: "text-center mt-6" }, [_vm._v("Infos pratiques")])
+    return _c(
+      "a",
+      {
+        staticClass: "block",
+        attrs: {
+          href: "https://goo.gl/maps/8L4mEVUf6AvM9m7E9",
+          target: "_blank"
+        }
+      },
+      [
+        _vm._v("16 boulevard Charles Nicolle"),
+        _c("br"),
+        _vm._v("72000 Le Mans")
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "text-lg" }, [
+      _vm._v("Ouverture au public - "),
+      _c("span", { staticClass: "font-black text-pink-400" }, [_vm._v("11:00")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "text-lg" }, [
+      _vm._v("Premier match - "),
+      _c("span", { staticClass: "font-black text-pink-400" }, [_vm._v("12:00")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "text-lg" }, [
+      _vm._v("Fermeture des portes - "),
+      _c("span", { staticClass: "font-black text-pink-400" }, [_vm._v("19:30")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "text-lg" }, [
+      _vm._v("Ouverture au public - "),
+      _c("span", { staticClass: "font-black text-pink-400" }, [_vm._v("10:30")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "text-lg" }, [
+      _vm._v("Premier match - "),
+      _c("span", { staticClass: "font-black text-pink-400" }, [_vm._v("11:00")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "text-lg" }, [
+      _vm._v("Fermeture des portes - "),
+      _c("span", { staticClass: "font-black text-pink-400" }, [_vm._v("17:30")])
     ])
   }
 ]

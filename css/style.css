@@ -6922,8 +6922,16 @@ h2 {
   line-height: 1;
 }
 
+h3 {
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
 a {
   color: #bc003e;
+  text-decoration: underline;
   -webkit-transition: color 200ms;
   transition: color 200ms;
 }

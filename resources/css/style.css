@@ -12,8 +12,11 @@ h1 {
 h2 {
     @apply font-sans font-semibold text-2xl leading-none;
 }
+h3 {
+    @apply font-sans font-semibold text-xl leading-none;
+}
 a {
-    @apply text-pink-400;
+    @apply text-pink-400 underline;
     transition: color 200ms;
 
     &:hover, &:active, &:focus {
