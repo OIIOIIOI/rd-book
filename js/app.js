@@ -2211,7 +2211,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       sw: null,
-      lazy: true
+      lazy: false
     };
   },
   props: {
