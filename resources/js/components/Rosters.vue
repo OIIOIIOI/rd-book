@@ -40,6 +40,10 @@
                     pagination: {
                         el: '#teams-nav',
                     },
+                    keyboard: {
+                        enabled: true,
+                        onlyInViewport: true,
+                    },
                 });
             })
         },

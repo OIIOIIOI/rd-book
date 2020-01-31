@@ -2125,6 +2125,10 @@ __webpack_require__.r(__webpack_exports__);
         direction: 'vertical',
         pagination: {
           el: '#teams-nav'
+        },
+        keyboard: {
+          enabled: true,
+          onlyInViewport: true
         }
       });
     });
@@ -2353,6 +2357,10 @@ __webpack_require__.r(__webpack_exports__);
         pagination: {
           el: '#' + vm.nav_id,
           type: 'progressbar'
+        },
+        keyboard: {
+          enabled: true,
+          onlyInViewport: true
         }
       });
     });

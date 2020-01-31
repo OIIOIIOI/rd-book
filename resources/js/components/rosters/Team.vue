@@ -46,6 +46,10 @@
                         el: '#'+vm.nav_id,
                         type: 'progressbar',
                     },
+                    keyboard: {
+                        enabled: true,
+                        onlyInViewport: true,
+                    },
                 });
             });
         },
