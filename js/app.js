@@ -30029,7 +30029,7 @@ var staticRenderFns = [
         attrs: { src: "images/N2E2.jpg", alt: "Affiche N2 Le Mans" }
       }),
       _vm._v(" "),
-      _c("p", { staticClass: "text-center text-xs py-1" }, [
+      _c("p", { staticClass: "text-center text-sm py-1" }, [
         _vm._v("Affiche par "),
         _c("span", { staticClass: "font-semibold" }, [_vm._v("Solène Gaudin")])
       ])
