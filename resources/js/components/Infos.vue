@@ -23,11 +23,12 @@
 		<p class="text-lg">Journée - <span class="font-semibold text-pink-400">4€</span></p>
 		<p class="text-lg">Pass week-end - <span class="font-semibold text-pink-400">7€</span></p>
 		
-		<h2 class="mt-8 mb-3">Services</h2>
-		<p class="text-lg"><i class="icon ion-md-beer text-pink-400 mr-2"></i>Buvette/Snack</p>
-		<p class="text-lg"><i class="icon ion-md-shirt text-pink-400 mr-2"></i>Merch</p>
+		<h2 class="mt-8 mb-3"><i class="icon ion-md-add-circle mr-2"></i>Services</h2>
+		<p class="text-lg"><i class="icon ion-md-beer text-pink-400 mr-2"></i>Buvette/Snack *</p>
+		<p class="text-lg"><i class="icon ion-md-shirt text-pink-400 mr-2"></i>Merch *</p>
 		<p class="text-lg"><i class="icon ion-md-microphone text-pink-400 mr-2"></i>Commentaires en direct</p>
 		<p class="text-lg"><i class="icon ion-md-videocam text-pink-400 mr-2"></i>Livestream</p>
+		<p class="text-sm mt-2">* <i class="icon ion-md-card text-pink-400 mr-1"></i>CB acceptée</p>
 	</div>
 </template>
 
