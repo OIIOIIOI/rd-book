@@ -30149,7 +30149,10 @@ var render = function() {
       _vm._v(" "),
       _c(
         "marquee-text",
-        { staticClass: "relative", attrs: { duration: _vm.duration } },
+        {
+          staticClass: "relative",
+          attrs: { duration: _vm.duration, repeat: 3 }
+        },
         _vm._l(_vm.marqueeLines, function(line) {
           return _c("span", {
             staticClass: "px-4 border-r-2 border-pink-400",

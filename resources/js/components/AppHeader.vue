@@ -7,7 +7,7 @@
 <!--			<router-link to="/rules"><i class="icon ion-md-help"></i></router-link>-->
 			<router-link to="/infos"><i class="icon ion-md-information-circle-outline"></i></router-link>
 		</div>
-		<marquee-text :duration="duration" class="relative">
+		<marquee-text :duration="duration" :repeat="3" class="relative">
 			<span class="px-4 border-r-2 border-pink-400" v-for="line in marqueeLines" v-html="line"></span>
 		</marquee-text>
 	</header>
