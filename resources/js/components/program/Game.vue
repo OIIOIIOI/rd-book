@@ -1,7 +1,7 @@
 <template>
 	<section :class="classes">
 		<p class="text-center font-semibold">
-			<span class="text-xl">{{ game.title }}</span> - <span class="text-pink-600 text-2xl">{{ game.time }}</span>
+			<span class="text-xl">{{ game.title }}</span> - <span class="text-pink-400 text-2xl">{{ game.time }}</span>
 		</p>
 		<p class="team-a">
 			<i v-if="teamAWon" class="icon ion-md-star text-pink-400 text-xl mr-1"></i>
@@ -31,14 +31,14 @@
             classes: function () {
                 let a = [];
                 if (this.game.over) a.push('is-over');
-                if (this.game.id === 1) a.push('is-current');
+                // if (this.game.id === 1) a.push('is-current');
                 return a.join(' ');
             },
             teamAWon: function () {
-                return this.game.scores[0] > this.game.scores[1];
+                return this.game.scores[0] > this.game.scores[1] && this.game.over;
             },
             teamBWon: function () {
-                return this.game.scores[1] > this.game.scores[0];
+                return this.game.scores[1] > this.game.scores[0] && this.game.over;
             }
         },
     }

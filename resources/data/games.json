@@ -4,7 +4,7 @@
     "games": [
       {
         "id": 0,
-        "over": true,
+        "over": false,
         "title": "Match 1",
         "time": "12:00",
         "teams": [

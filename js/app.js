@@ -2179,15 +2179,15 @@ __webpack_require__.r(__webpack_exports__);
   computed: {
     classes: function classes() {
       var a = [];
-      if (this.game.over) a.push('is-over');
-      if (this.game.id === 1) a.push('is-current');
+      if (this.game.over) a.push('is-over'); // if (this.game.id === 1) a.push('is-current');
+
       return a.join(' ');
     },
     teamAWon: function teamAWon() {
-      return this.game.scores[0] > this.game.scores[1];
+      return this.game.scores[0] > this.game.scores[1] && this.game.over;
     },
     teamBWon: function teamBWon() {
-      return this.game.scores[1] > this.game.scores[0];
+      return this.game.scores[1] > this.game.scores[0] && this.game.over;
     }
   }
 });
@@ -30374,7 +30374,10 @@ var render = function() {
           { key: index },
           [
             _c("h2", { staticClass: "text-center my-6" }, [
-              _vm._v(_vm._s(day.date))
+              _c("i", { staticClass: "icon ion-md-calendar mr-2" }),
+              _c("span", { staticClass: "text-pink-400" }, [
+                _vm._v(_vm._s(day.date))
+              ])
             ]),
             _vm._v(" "),
             _vm._l(day.games, function(game, index) {
@@ -30465,7 +30468,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
+    return _c("div", { staticClass: "pb-8" }, [
       _c("h1", { staticClass: "text-center mt-6" }, [_vm._v("ROLLER DERBY ?")]),
       _vm._v(" "),
       _c("h2", { staticClass: "text-center my-2" }, [_vm._v("Règles du jeu")])
@@ -30497,7 +30500,7 @@ var render = function() {
     _c("p", { staticClass: "text-center font-semibold" }, [
       _c("span", { staticClass: "text-xl" }, [_vm._v(_vm._s(_vm.game.title))]),
       _vm._v(" - "),
-      _c("span", { staticClass: "text-pink-600 text-2xl" }, [
+      _c("span", { staticClass: "text-pink-400 text-2xl" }, [
         _vm._v(_vm._s(_vm.game.time))
       ])
     ]),
@@ -47453,7 +47456,7 @@ module.exports = JSON.parse("{\"id\":14,\"name\":\"Les Pétroleuses\",\"roster\"
 /*! exports provided: 0, 1, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"date\":\"Samedi 1er février\",\"games\":[{\"id\":0,\"over\":true,\"title\":\"Match 1\",\"time\":\"12:00\",\"teams\":[{\"name\":\"Les Divines Machines\",\"city\":\"Nantes\"},{\"name\":\"Les Morues\",\"city\":\"Lorient\"}],\"scores\":[186,142]},{\"id\":1,\"over\":false,\"title\":\"Match 2\",\"time\":\"14:30\",\"teams\":[{\"name\":\"Les Bomb'Hard\",\"city\":\"Kemper\"},{\"name\":\"Les Pétroleuses\",\"city\":\"Caen\"}],\"scores\":[0,0]},{\"id\":2,\"over\":false,\"title\":\"Match 3\",\"time\":\"17:00\",\"teams\":[{\"name\":\"Toutes Etoiles\",\"city\":\"Brest\"},{\"name\":\"Les Missfeet\",\"city\":\"Le Mans\"}],\"scores\":[0,0]}]},{\"date\":\"Dimanche 2 février\",\"games\":[{\"id\":3,\"over\":false,\"title\":\"Match 4\",\"time\":\"11:00\",\"teams\":[{\"name\":\"Les Divines Machines\",\"city\":\"Nantes\"},{\"name\":\"Les Pétroleuses\",\"city\":\"Caen\"}],\"scores\":[0,0]},{\"id\":4,\"over\":false,\"title\":\"Match 5\",\"time\":\"14:00\",\"teams\":[{\"name\":\"Les Missfeet\",\"city\":\"Le Mans\"},{\"name\":\"Les Morues\",\"city\":\"Lorient\"}],\"scores\":[0,0]}]}]");
+module.exports = JSON.parse("[{\"date\":\"Samedi 1er février\",\"games\":[{\"id\":0,\"over\":false,\"title\":\"Match 1\",\"time\":\"12:00\",\"teams\":[{\"name\":\"Les Divines Machines\",\"city\":\"Nantes\"},{\"name\":\"Les Morues\",\"city\":\"Lorient\"}],\"scores\":[186,142]},{\"id\":1,\"over\":false,\"title\":\"Match 2\",\"time\":\"14:30\",\"teams\":[{\"name\":\"Les Bomb'Hard\",\"city\":\"Kemper\"},{\"name\":\"Les Pétroleuses\",\"city\":\"Caen\"}],\"scores\":[0,0]},{\"id\":2,\"over\":false,\"title\":\"Match 3\",\"time\":\"17:00\",\"teams\":[{\"name\":\"Toutes Etoiles\",\"city\":\"Brest\"},{\"name\":\"Les Missfeet\",\"city\":\"Le Mans\"}],\"scores\":[0,0]}]},{\"date\":\"Dimanche 2 février\",\"games\":[{\"id\":3,\"over\":false,\"title\":\"Match 4\",\"time\":\"11:00\",\"teams\":[{\"name\":\"Les Divines Machines\",\"city\":\"Nantes\"},{\"name\":\"Les Pétroleuses\",\"city\":\"Caen\"}],\"scores\":[0,0]},{\"id\":4,\"over\":false,\"title\":\"Match 5\",\"time\":\"14:00\",\"teams\":[{\"name\":\"Les Missfeet\",\"city\":\"Le Mans\"},{\"name\":\"Les Morues\",\"city\":\"Lorient\"}],\"scores\":[0,0]}]}]");
 
 /***/ }),
 
