@@ -2,7 +2,23 @@
   "id": 56,
   "name": "Les Morues",
   "roster": [
-    { "number": "#", "name": "", "src": ".jpg"}
+    { "number": "#03", "name": "La FriteuZ", "src": "03.jpg"},
+    { "number": "#14", "name": "Whippy Lili", "src": "14.jpg"},
+    { "number": "#187", "name": "Petard Pan", "src": "187.jpg"},
+    { "number": "#2", "name": "Mum'of cats", "src": "2.jpg"},
+    { "number": "#21", "name": "Lara Croûte", "src": "21.jpg"},
+    { "number": "#210", "name": "Baddie", "src": "210.jpg"},
+    { "number": "#222", "name": "Little Crash", "src": "222.jpg"},
+    { "number": "#24", "name": "Sabou", "src": "24.jpg"},
+    { "number": "#321", "name": "Léa'mnésic", "src": "321.jpg"},
+    { "number": "#44", "name": "Clopi", "src": "44.jpg"},
+    { "number": "#50", "name": "Gand'hAlf LaNoire", "src": "50.jpg"},
+    { "number": "#511", "name": "Wall Block", "src": "511.jpg"},
+    { "number": "#91", "name": "Inked Doll", "src": "91.jpg"},
+    { "number": "#99", "name": "Brünhilde", "src": "99.jpg"},
+    { "number": "Bench", "name": "Doc Fox", "src": "bench.jpg"},
+    { "number": "Line-up", "name": "La Marquise", "src": "lineup.jpg"},
+    { "number": "Staff", "name": "Xarin", "src": "empty.jpg"}
   ],
   "folder": "lorient"
 }
