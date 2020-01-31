@@ -49,3 +49,16 @@ a {
         @apply bg-pink-400;
     }
 }
+
+form {
+    input[type='submit'] {
+        @apply block px-4 py-2 bg-pink-400 text-white;
+    }
+    select {
+        @apply block px-4 py-2;
+    }
+}
+
+
+
+
