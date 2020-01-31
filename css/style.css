@@ -6896,6 +6896,10 @@ a:hover, a:active, a:focus {
   color: #d80047;
 }
 
+#app main {
+  padding-top: 15vh;
+}
+
 #app-header {
   height: 10vh;
   line-height: 10vh;

@@ -24,6 +24,11 @@ a {
     }
 }
 
+#app {
+    main {
+        padding-top: 15vh;
+    }
+}
 #app-header {
     height: 10vh;
     line-height: 10vh;

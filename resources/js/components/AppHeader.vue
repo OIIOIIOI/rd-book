@@ -1,12 +1,12 @@
 <template>
-	<div>
-		<div class="h-header z-10 w-full bg-pink-900 text-pink-400 flex justify-between">
+	<div class="fixed top-0 left-0 z-50 w-full">
+		<div class="h-header relative z-10 w-full bg-pink-900 text-pink-400 flex justify-between">
 			<router-link to="/"><i class="icon ion-md-home"></i></router-link>
 			<router-link to="/programme"><i class="icon ion-md-stopwatch"></i></router-link>
-			<router-link to="/aide"><i class="icon ion-md-help"></i></router-link>
+			<router-link to="/infos"><i class="icon ion-md-help"></i></router-link>
 			<router-link to="/rosters"><i class="icon ion-md-contacts"></i></router-link>
 		</div>
-		<marquee-text :duration="duration">
+		<marquee-text :duration="duration" class="relative">
 			<span class="px-4 border-r-2 border-pink-400" v-for="line in marqueeLines" v-html="line"></span>
 		</marquee-text>
 	</div>
@@ -25,7 +25,7 @@
             marqueeLines: [],
         }),
         computed: {
-            duration: function () { return this.marqueeLines.length * 5; },
+            duration: function () { return this.marqueeLines.length * 7; },
         },
         mounted () {
             this.getMarquee();

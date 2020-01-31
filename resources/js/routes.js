@@ -1,6 +1,6 @@
 import Home from "./components/Home";
 import Program from "./components/Program";
-import Help from "./components/Help";
+import Infos from "./components/Infos";
 import Rosters from "./components/Rosters";
 
 export default [
@@ -15,9 +15,9 @@ export default [
         component: Program,
     },
     {
-        name: 'aide',
-        path: '/aide',
-        component: Help,
+        name: 'infos',
+        path: '/infos',
+        component: Infos,
     },
     {
         name: 'rosters',
