@@ -4,7 +4,7 @@
 			<router-link to="/"><i class="icon ion-md-home"></i></router-link>
 			<router-link to="/programme"><i class="icon ion-md-stopwatch"></i></router-link>
 			<router-link to="/rosters"><i class="icon ion-md-contacts"></i></router-link>
-			<router-link to="/rules"><i class="icon ion-md-help"></i></router-link>
+<!--			<router-link to="/rules"><i class="icon ion-md-help"></i></router-link>-->
 			<router-link to="/infos"><i class="icon ion-md-information-circle-outline"></i></router-link>
 		</div>
 		<marquee-text :duration="duration" class="relative">

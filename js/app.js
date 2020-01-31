@@ -30140,10 +30140,6 @@ var render = function() {
             _c("i", { staticClass: "icon ion-md-contacts" })
           ]),
           _vm._v(" "),
-          _c("router-link", { attrs: { to: "/rules" } }, [
-            _c("i", { staticClass: "icon ion-md-help" })
-          ]),
-          _vm._v(" "),
           _c("router-link", { attrs: { to: "/infos" } }, [
             _c("i", { staticClass: "icon ion-md-information-circle-outline" })
           ])
