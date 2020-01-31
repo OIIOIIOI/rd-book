@@ -2228,6 +2228,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Help",
   computed: {
@@ -2448,7 +2449,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".swiper-container[data-v-9d396cda] {\n  height: 85vh;\n}\ni.ion-md-arrow-round-down[data-v-9d396cda] {\n  left: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n}\n", ""]);
+exports.push([module.i, ".swiper-container[data-v-9d396cda] {\n  height: 85vh;\n}\nh1[data-v-9d396cda],\ni.ion-md-arrow-round-down[data-v-9d396cda] {\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n          transform: translateX(-50%);\n}\n", ""]);
 
 // exports
 
@@ -30801,6 +30802,12 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "swiper-slide" }, [
+    _c(
+      "h1",
+      { staticClass: "uppercase mt-6 text-center w-full absolute top-0" },
+      [_vm._v("ROSTERS")]
+    ),
+    _vm._v(" "),
     _c("img", {
       staticClass: "w-full h-full object-contain bg-gray-200",
       attrs: { src: _vm.img_path }
@@ -30808,7 +30815,7 @@ var render = function() {
     _vm._v(" "),
     _c("i", {
       staticClass:
-        "icon ion-md-arrow-round-down absolute bottom-0 text-4xl text-pink-400"
+        "icon ion-md-arrow-round-down absolute bottom-0 text-4xl text-pink-400 mb-4"
     })
   ])
 }
