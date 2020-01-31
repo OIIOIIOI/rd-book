@@ -2,6 +2,7 @@
 	<div>
 		<div id="teams" class="swiper-container w-full">
 			<div class="swiper-wrapper">
+				<help></help>
 				<team v-for="team in teams" :key="team.id" :team="team"></team>
 			</div>
 			<div id="teams-nav" class="swiper-pagination"></div>
@@ -11,11 +12,13 @@
 
 <script>
     import Swiper from 'swiper';
-	import Team from './rosters/Team';
+    import Help from './rosters/Help';
+    import Team from './rosters/Team';
 	
     export default {
         name: "Rosters",
         components: {
+            Help,
             Team,
         },
         data: () => ({
