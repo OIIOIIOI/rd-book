@@ -2014,6 +2014,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Infos"
 });
@@ -30117,7 +30128,25 @@ var render = function() {
         "router-link",
         { staticClass: "block mt-4", attrs: { to: "/programme" } },
         [_vm._v("Voir le programme complet")]
-      )
+      ),
+      _vm._v(" "),
+      _vm._m(9),
+      _vm._v(" "),
+      _vm._m(10),
+      _vm._v(" "),
+      _vm._m(11),
+      _vm._v(" "),
+      _vm._m(12),
+      _vm._v(" "),
+      _c("h2", { staticClass: "mt-8 mb-3" }, [_vm._v("Services")]),
+      _vm._v(" "),
+      _vm._m(13),
+      _vm._v(" "),
+      _vm._m(14),
+      _vm._v(" "),
+      _vm._m(15),
+      _vm._v(" "),
+      _vm._m(16)
     ],
     1
   )
@@ -30213,6 +30242,80 @@ var staticRenderFns = [
     return _c("p", { staticClass: "text-lg" }, [
       _vm._v("Fermeture des portes - "),
       _c("span", { staticClass: "font-black text-pink-400" }, [_vm._v("17:30")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h2", { staticClass: "mt-8 mb-3" }, [
+      _c("i", { staticClass: "icon ion-md-cash mr-2" }),
+      _vm._v("Combien ?")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "text-lg" }, [
+      _vm._v("Moins de 12 ans - "),
+      _c("span", { staticClass: "font-semibold text-pink-400" }, [
+        _vm._v("Gratuit")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "text-lg" }, [
+      _vm._v("Journée - "),
+      _c("span", { staticClass: "font-semibold text-pink-400" }, [_vm._v("4€")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "text-lg" }, [
+      _vm._v("Pass week-end - "),
+      _c("span", { staticClass: "font-semibold text-pink-400" }, [_vm._v("7€")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "text-lg" }, [
+      _c("i", { staticClass: "icon ion-md-beer text-pink-400 mr-2" }),
+      _vm._v("Buvette/Snack")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "text-lg" }, [
+      _c("i", { staticClass: "icon ion-md-shirt text-pink-400 mr-2" }),
+      _vm._v("Merch")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "text-lg" }, [
+      _c("i", { staticClass: "icon ion-md-microphone text-pink-400 mr-2" }),
+      _vm._v("Commentaires en direct")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "text-lg" }, [
+      _c("i", { staticClass: "icon ion-md-videocam text-pink-400 mr-2" }),
+      _vm._v("Livestream")
     ])
   }
 ]

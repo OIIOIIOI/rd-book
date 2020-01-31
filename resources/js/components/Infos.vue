@@ -17,6 +17,17 @@
 		<p class="text-lg">Premier match - <span class="font-black text-pink-400">11:00</span></p>
 		<p class="text-lg">Fermeture des portes - <span class="font-black text-pink-400">17:30</span></p>
 		<router-link to="/programme" class="block mt-4">Voir le programme complet</router-link>
+		
+		<h2 class="mt-8 mb-3"><i class="icon ion-md-cash mr-2"></i>Combien ?</h2>
+		<p class="text-lg">Moins de 12 ans - <span class="font-semibold text-pink-400">Gratuit</span></p>
+		<p class="text-lg">Journée - <span class="font-semibold text-pink-400">4€</span></p>
+		<p class="text-lg">Pass week-end - <span class="font-semibold text-pink-400">7€</span></p>
+		
+		<h2 class="mt-8 mb-3">Services</h2>
+		<p class="text-lg"><i class="icon ion-md-beer text-pink-400 mr-2"></i>Buvette/Snack</p>
+		<p class="text-lg"><i class="icon ion-md-shirt text-pink-400 mr-2"></i>Merch</p>
+		<p class="text-lg"><i class="icon ion-md-microphone text-pink-400 mr-2"></i>Commentaires en direct</p>
+		<p class="text-lg"><i class="icon ion-md-videocam text-pink-400 mr-2"></i>Livestream</p>
 	</div>
 </template>
 
