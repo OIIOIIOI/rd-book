@@ -2070,7 +2070,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      teams: [__webpack_require__(/*! ../../data/quimper */ "./resources/data/quimper.json"), __webpack_require__(/*! ../../data/nantes */ "./resources/data/nantes.json"), __webpack_require__(/*! ../../data/lemans */ "./resources/data/lemans.json"), __webpack_require__(/*! ../../data/officiels */ "./resources/data/officiels.json")]
+      teams: [__webpack_require__(/*! ../../data/nantes */ "./resources/data/nantes.json"), __webpack_require__(/*! ../../data/lorient */ "./resources/data/lorient.json"), __webpack_require__(/*! ../../data/quimper */ "./resources/data/quimper.json"), __webpack_require__(/*! ../../data/caen */ "./resources/data/caen.json"), __webpack_require__(/*! ../../data/brest */ "./resources/data/brest.json"), __webpack_require__(/*! ../../data/lemans */ "./resources/data/lemans.json"), __webpack_require__(/*! ../../data/officiels */ "./resources/data/officiels.json")]
     };
   },
   created: function created() {
@@ -47152,6 +47152,28 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/data/brest.json":
+/*!***********************************!*\
+  !*** ./resources/data/brest.json ***!
+  \***********************************/
+/*! exports provided: id, name, roster, folder, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"id\":2929,\"name\":\"Toutes Étoiles\",\"roster\":[{\"number\":\"#\",\"name\":\"\",\"src\":\".jpg\"}],\"folder\":\"brest\"}");
+
+/***/ }),
+
+/***/ "./resources/data/caen.json":
+/*!**********************************!*\
+  !*** ./resources/data/caen.json ***!
+  \**********************************/
+/*! exports provided: id, name, roster, folder, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"id\":14,\"name\":\"Les Pétroleuses\",\"roster\":[{\"number\":\"#\",\"name\":\"\",\"src\":\".jpg\"}],\"folder\":\"caen\"}");
+
+/***/ }),
+
 /***/ "./resources/data/games.json":
 /*!***********************************!*\
   !*** ./resources/data/games.json ***!
@@ -47171,6 +47193,17 @@ module.exports = JSON.parse("[{\"date\":\"Samedi 1er février\",\"games\":[{\"id
 /***/ (function(module) {
 
 module.exports = JSON.parse("{\"id\":72,\"name\":\"Les Missfeet\",\"league\":\"Roller Derby 72\",\"roster\":[{\"number\":\"#123\",\"name\":\"Jacky Chan\",\"src\":\"A_16_clear.jpg\"},{\"number\":\"#126\",\"name\":\"L'InstiCat'rice\",\"src\":\"A_126_clear.jpg\"},{\"number\":\"#17\",\"name\":\"Ju The Kid\",\"src\":\"A_17_clear.jpg\"},{\"number\":\"#171\",\"name\":\"LuCette\",\"src\":\"A_171_clear.jpg\"},{\"number\":\"#19\",\"name\":\"L'Amère Michel\",\"src\":\"A_19_clear.jpg\"},{\"number\":\"#21\",\"name\":\"Wild Purple\",\"src\":\"A_21_clear.jpg\"},{\"number\":\"#215\",\"name\":\"Pathé du diable\",\"src\":\"A_215_clear.jpg\"},{\"number\":\"#26\",\"name\":\"Progr'Hammer\",\"src\":\"A_26_clear.jpg\"},{\"number\":\"#333\",\"name\":\"MafalDeath\",\"src\":\"A_333_clear.jpg\"},{\"number\":\"#4\",\"name\":\"Verge Folle\",\"src\":\"A_4_clear.jpg\"},{\"number\":\"#456\",\"name\":\"Maud'Hit\",\"src\":\"A_28_clear.jpg\"},{\"number\":\"#75\",\"name\":\"Madame Moustache\",\"src\":\"A_75_clear.jpg\"},{\"number\":\"#77\",\"name\":\"Malka Red Thatcher\",\"src\":\"A_77_clear.jpg\"},{\"number\":\"#817\",\"name\":\"La Camibale\",\"src\":\"A_817_clear.jpg\"},{\"number\":\"#82\",\"name\":\"Tchou'Baka\",\"src\":\"A_82_clear.jpg\"},{\"number\":\"#87\",\"name\":\"Glory Owl\",\"src\":\"A_87_clear.jpg\"},{\"number\":\"#95\",\"name\":\"BoobZilla\",\"src\":\"A_95_clear.jpg\"},{\"number\":\"#99\",\"name\":\"Ellen Ripe-Les\",\"src\":\"A_99_clear.jpg\"},{\"number\":\"Bench\",\"name\":\"Monsieur Moustache\",\"src\":\"A_Bench_clear.jpg\"},{\"number\":\"Line-up\",\"name\":\"Denise Brogniasse\",\"src\":\"A_Lineup_clear.jpg\"},{\"number\":\"Line-up\",\"name\":\"Zob Rombie\",\"src\":\"A_Lineup2_clear.jpg\"}],\"folder\":\"lemans\"}");
+
+/***/ }),
+
+/***/ "./resources/data/lorient.json":
+/*!*************************************!*\
+  !*** ./resources/data/lorient.json ***!
+  \*************************************/
+/*! exports provided: id, name, roster, folder, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"id\":56,\"name\":\"Les Morues\",\"roster\":[{\"number\":\"#\",\"name\":\"\",\"src\":\".jpg\"}],\"folder\":\"lorient\"}");
 
 /***/ }),
 

@@ -20,8 +20,11 @@
         },
         data: () => ({
             teams: [
-                require('../../data/quimper'),
                 require('../../data/nantes'),
+                require('../../data/lorient'),
+                require('../../data/quimper'),
+                require('../../data/caen'),
+                require('../../data/brest'),
                 require('../../data/lemans'),
                 require('../../data/officiels'),
             ],
