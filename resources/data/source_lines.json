@@ -1,0 +1,8 @@
+{
+  "next_game": "<span class='uppercase font-black'>Prochain match</span> à <span class='font-semibold'>[TIME]</span> - <span class='font-semibold'>[TEAM_A]</span> vs <span class='font-semibold'>[TEAM_B]</span>",
+  "half_time": "<span class='uppercase font-black'>Score à la mi-temps</span> : <span class='font-semibold'>[TEAM_A]</span> <span class='font-black'>[SCORE_A]</span> vs <span class='font-black'>[SCORE_B]</span> <span class='font-semibold'>[TEAM_B]</span>",
+  "final_score": "<span class='uppercase font-black'>Score final</span> : <span class='font-semibold'>[TEAM_A]</span> <span class='font-black'>[SCORE_A]</span> vs <span class='font-black'>[SCORE_B]</span> <span class='font-semibold'>[TEAM_B]</span>",
+  "saturday_night": "<span class='uppercase font-black'>C'est fini pour aujourd'hui !</span> Rendez-vous pour l'<span class='font-semibold'>after à l'Elephant Pub</span>, place d'Alger",
+  "the_end": "<span class='uppercase font-black'>Fin de l'étape !</span> <span class='font-semibold'>Un grand merci au public, aux équipes, aux officiels, aux bénévoles et à nos partenaires</span> pour avoir fait de cet évènement un succès ! <span class='font-black'><3</span>",
+  "custom": "<span class='font-semibold'>[MSG]</span>"
+}
