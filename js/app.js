@@ -2235,10 +2235,10 @@ __webpack_require__.r(__webpack_exports__);
       return a.join(' ');
     },
     teamAWon: function teamAWon() {
-      return this.game.scores[0] > this.game.scores[1] && this.game.over;
+      return parseInt(this.game.scores[0]) > parseInt(this.game.scores[1]) && this.game.over;
     },
     teamBWon: function teamBWon() {
-      return this.game.scores[1] > this.game.scores[0] && this.game.over;
+      return parseInt(this.game.scores[1]) > parseInt(this.game.scores[0]) && this.game.over;
     }
   }
 });
