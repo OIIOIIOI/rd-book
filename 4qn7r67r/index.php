@@ -2,10 +2,12 @@
 $SOURCE_LINES_FILE = "../resources/data/source_lines.json";
 $MARQUEE_FILE = "../resources/data/marquee.json";
 $GAMES_FILE = "../resources/data/games.json";
+$CURRENT_FILE = "../resources/data/current.json";
 
 $data_source_lines = json_decode(file_get_contents($SOURCE_LINES_FILE),true);
 $data_lines = json_decode(file_get_contents($MARQUEE_FILE),true);
 $data_games = json_decode(file_get_contents($GAMES_FILE),true);
+$data_current = json_decode(file_get_contents($CURRENT_FILE),true);
 
 if (isset($_POST['action']))
 {
@@ -16,7 +18,7 @@ if (isset($_POST['action']))
 		$scores_game = $_POST['scores_game'];
 		$score_team_a = $_POST['score_team_a'];
 		$score_team_b = $_POST['score_team_b'];
-//		$overwrite = ($_POST['overwrite'] == 'true') ? true : false;
+		$game_over = isset($_POST['is_over']);
 		
 		// Find target game data
 		$found = false;
@@ -28,6 +30,7 @@ if (isset($_POST['action']))
 				{
 					$data_games[$key_d]['games'][$key_g]['scores'][0] = $score_team_a;
 					$data_games[$key_d]['games'][$key_g]['scores'][1] = $score_team_b;
+					$data_games[$key_d]['games'][$key_g]['over'] = $game_over;
 					$found = true;
 					break 2;
 				}
@@ -36,6 +39,13 @@ if (isset($_POST['action']))
 		
 		if ($found)
 			file_put_contents($GAMES_FILE, json_encode($data_games));
+	}
+	// Update lines
+	else if ($action == 'update_current')
+	{
+		$current_game = $_POST['current_game'];
+		$data_current['current'] = intval($current_game);
+		file_put_contents($CURRENT_FILE, json_encode($data_current));
 	}
 	// Update lines
 	else if ($action == 'update_lines')
@@ -104,13 +114,51 @@ $_POST = array();
 		<a href="/" class="block flex-grow px-4 py-2 mr-2 text-xl text-center no-underline bg-pink-400 text-white hover:text-white"><i class="icon ion-md-arrow-round-back mr-2"></i>Retour</a>
 		<a href="/4qn7r67r" class="block flex-grow px-4 py-2 ml-2 text-xl text-center no-underline bg-pink-400 text-white hover:text-white"><i class="icon ion-md-refresh mr-2"></i>Actualiser</a>
 	</div>
-	<div class="mt-8">
+	<div class="mt-16">
+		<h1 class="">Match en cours</h1>
+		<p class="bg-black text-pink-100 mt-2 py-1 px-2 font-semibold">
+			<?php
+			$cg = 'Aucun';
+			foreach ($data_games as $day) {
+				foreach ($day['games'] as $game) {
+					if ($game['id'] == $data_current['current'])
+					{
+						$cg = $game['title'];
+						break 2;
+					}
+				}
+			}
+			echo $cg;
+			?>
+		</p>
+		<h2 class="mt-3">Mise à jour</h2>
+		<form action="" method="post">
+			<label for="current_game_select" class="block mt-2">Match :</label>
+			<select name="current_game" id="current_game_select">
+				<option value="-1">Aucun</option>
+				<option value="0">Match 1 : Divines - Morues</option>
+				<option value="1">Match 2 : Bomb'Hard - Pétroleuses</option>
+				<option value="2">Match 3 : Toutes Etoiles - Missfeet</option>
+				<option value="3">Match 4 : Divines - Pétroleuses</option>
+				<option value="4">Match 5 : Missfeet - Morues</option>
+			</select>
+			<input type="hidden" name="action" value="update_current">
+			<input type="submit" value="Valider" class="mt-4">
+		</form>
+	</div>
+	<div class="mt-16">
 		<h1 class="">Scores</h1>
 		<h2 class="mt-3">Scores actuels :</h2>
 		<ul class="bg-black text-pink-100 mt-2 py-1">
 			<?php foreach ($data_games as $day) : ?>
-				<?php foreach ($day['games'] as $game) : ?>
-					<li class="px-2"><?php echo $game['title'].' : <span class="font-semibold">'.implode(" - ", $game['scores']).'</span>'; ?></li>
+				<?php
+				foreach ($day['games'] as $game) :
+					$content = $game['title'].' :';
+					$content .= '<span class="font-semibold mx-3">'.implode(" - ", $game['scores']).'</span>';
+					if ($game['over'])
+						$content .= '(TERMINÉ)';
+					?>
+					<li class="px-2"><?php echo $content; ?></li>
 				<?php endforeach; ?>
 			<?php endforeach; ?>
 		</ul>
@@ -141,7 +189,7 @@ $_POST = array();
 			<input type="submit" value="Valider" class="mt-4">
 		</form>
 	</div>
-	<div class="mt-8">
+	<div class="mt-16">
 		<h1 class="mt-4">Bandeau d'info</h1>
 		<h2 class="mt-3">Contenu actuel :</h2>
 		<ul class="bg-black text-pink-100 mt-2 py-1">

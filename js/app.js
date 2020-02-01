@@ -2063,6 +2063,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _program_Game__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./program/Game */ "./resources/js/components/program/Game.vue");
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../api */ "./resources/js/api.js");
 //
 //
 //
@@ -2074,6 +2075,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Program",
   components: {
@@ -2081,8 +2083,14 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      games: __webpack_require__(/*! ../../data/games */ "./resources/data/games.json")
+      games: __webpack_require__(/*! ../../data/games */ "./resources/data/games.json"),
+      current: __webpack_require__(/*! ../../data/current */ "./resources/data/current.json")
     };
+  },
+  methods: {
+    isCurrent: function isCurrent(id) {
+      return id === this.current.current;
+    }
   }
 });
 
@@ -2203,13 +2211,16 @@ __webpack_require__.r(__webpack_exports__);
   props: {
     game: {
       required: true
+    },
+    current: {
+      required: true
     }
   },
   computed: {
     classes: function classes() {
       var a = [];
-      if (this.game.over) a.push('is-over'); // if (this.game.id === 1) a.push('is-current');
-
+      if (this.game.over) a.push('is-over');
+      if (this.current) a.push('is-current');
       return a.join(' ');
     },
     teamAWon: function teamAWon() {
@@ -30611,7 +30622,7 @@ var render = function() {
               return _c("game", {
                 key: index,
                 class: index % 2 ? "odd" : "even",
-                attrs: { game: game }
+                attrs: { game: game, current: _vm.isCurrent(game.id) }
               })
             })
           ],
@@ -47720,6 +47731,17 @@ module.exports = JSON.parse("{\"id\":14,\"name\":\"Les Pétroleuses\",\"roster\"
 
 /***/ }),
 
+/***/ "./resources/data/current.json":
+/*!*************************************!*\
+  !*** ./resources/data/current.json ***!
+  \*************************************/
+/*! exports provided: current, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"current\":-1}");
+
+/***/ }),
+
 /***/ "./resources/data/games.json":
 /*!***********************************!*\
   !*** ./resources/data/games.json ***!
@@ -47727,7 +47749,7 @@ module.exports = JSON.parse("{\"id\":14,\"name\":\"Les Pétroleuses\",\"roster\"
 /*! exports provided: 0, 1, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"date\":\"Samedi 1er février\",\"games\":[{\"id\":0,\"over\":false,\"title\":\"Match 1\",\"time\":\"12:00\",\"teams\":[{\"name\":\"Les Divines Machines\",\"city\":\"Nantes\"},{\"name\":\"Les Morues\",\"city\":\"Lorient\"}],\"scores\":[\"0\",\"0\"]},{\"id\":1,\"over\":false,\"title\":\"Match 2\",\"time\":\"14:30\",\"teams\":[{\"name\":\"Les Bomb'Hard\",\"city\":\"Kemper\"},{\"name\":\"Les Pétroleuses\",\"city\":\"Caen\"}],\"scores\":[\"0\",\"0\"]},{\"id\":2,\"over\":false,\"title\":\"Match 3\",\"time\":\"17:00\",\"teams\":[{\"name\":\"Toutes Etoiles\",\"city\":\"Brest\"},{\"name\":\"Les Missfeet\",\"city\":\"Le Mans\"}],\"scores\":[0,0]}]},{\"date\":\"Dimanche 2 février\",\"games\":[{\"id\":3,\"over\":false,\"title\":\"Match 4\",\"time\":\"11:00\",\"teams\":[{\"name\":\"Les Divines Machines\",\"city\":\"Nantes\"},{\"name\":\"Les Pétroleuses\",\"city\":\"Caen\"}],\"scores\":[0,0]},{\"id\":4,\"over\":false,\"title\":\"Match 5\",\"time\":\"14:00\",\"teams\":[{\"name\":\"Les Missfeet\",\"city\":\"Le Mans\"},{\"name\":\"Les Morues\",\"city\":\"Lorient\"}],\"scores\":[0,0]}]}]");
+module.exports = JSON.parse("[{\"date\":\"Samedi 1er février\",\"games\":[{\"id\":0,\"over\":false,\"title\":\"Match 1\",\"time\":\"12:00\",\"teams\":[{\"name\":\"Les Divines Machines\",\"city\":\"Nantes\"},{\"name\":\"Les Morues\",\"city\":\"Lorient\"}],\"scores\":[\"0\",\"0\"]},{\"id\":1,\"over\":false,\"title\":\"Match 2\",\"time\":\"14:30\",\"teams\":[{\"name\":\"Les Bomb'Hard\",\"city\":\"Kemper\"},{\"name\":\"Les Pétroleuses\",\"city\":\"Caen\"}],\"scores\":[\"0\",\"0\"]},{\"id\":2,\"over\":false,\"title\":\"Match 3\",\"time\":\"17:00\",\"teams\":[{\"name\":\"Toutes Etoiles\",\"city\":\"Brest\"},{\"name\":\"Les Missfeet\",\"city\":\"Le Mans\"}],\"scores\":[0,0]}]},{\"date\":\"Dimanche 2 février\",\"games\":[{\"id\":3,\"over\":false,\"title\":\"Match 4\",\"time\":\"11:00\",\"teams\":[{\"name\":\"Les Divines Machines\",\"city\":\"Nantes\"},{\"name\":\"Les Pétroleuses\",\"city\":\"Caen\"}],\"scores\":[\"0\",\"0\"]},{\"id\":4,\"over\":false,\"title\":\"Match 5\",\"time\":\"14:00\",\"teams\":[{\"name\":\"Les Missfeet\",\"city\":\"Le Mans\"},{\"name\":\"Les Morues\",\"city\":\"Lorient\"}],\"scores\":[0,0]}]}]");
 
 /***/ }),
 
