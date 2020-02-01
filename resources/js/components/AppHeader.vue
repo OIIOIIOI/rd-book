@@ -7,7 +7,7 @@
 <!--			<router-link to="/rules"><i class="icon ion-md-help"></i></router-link>-->
 			<router-link to="/infos"><i class="icon ion-md-information-circle-outline"></i></router-link>
 		</div>
-		<marquee-text :duration="duration" :repeat="3" class="relative">
+		<marquee-text :duration="duration" :repeat="5" class="relative">
 			<span class="px-4 border-r-2 border-pink-400" v-for="line in marqueeLines" v-html="line"></span>
 		</marquee-text>
 	</header>
@@ -26,7 +26,15 @@
             marqueeLines: [],
         }),
         computed: {
-            duration: function () { return this.marqueeLines.length * 7; },
+            duration: function () {
+                let letters = 0;
+                _.forEach(this.marqueeLines, function (l)
+                {
+                    l = l.replace(/<\/?[^>]+(>|$)/g, "");
+                    letters += l.length;
+                });
+                return Math.ceil(letters / 9);
+            },
         },
         mounted () {
             this.getMarquee();

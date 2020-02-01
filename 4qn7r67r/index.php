@@ -64,6 +64,7 @@ if (isset($_POST['action']))
 		file_put_contents($MARQUEE_FILE, json_encode($data_lines));
 	}
 }
+$_POST = array();
 ?>
 <!doctype html>
 <html lang="en">
@@ -77,14 +78,15 @@ if (isset($_POST['action']))
 </head>
 <body class="font-sans bg-gray-200 text-pink-900 p-8">
 	<div class="">
+		<a href="/">Retour</a>
 		<h1 class="">Bandeau d'infos</h1>
-		<h2 class="">Contenu actuel :</h2>
-		<ul class="">
+		<h2 class="mt-3">Contenu actuel :</h2>
+		<ul class="bg-black text-pink-100 mt-2 py-1">
 			<?php foreach ($data_lines['lines'] as $line) : ?>
-				<li><?php echo $line; ?></li>
+				<li class="px-2"><?php echo $line; ?></li>
 			<?php endforeach; ?>
 		</ul>
-		<h2 class="">Mise à jour</h2>
+		<h2 class="mt-3">Mise à jour</h2>
 		<form action="" method="post">
 			<label for="line_select">Nouvelle ligne :</label>
 			<select name="line_text" id="line_select">

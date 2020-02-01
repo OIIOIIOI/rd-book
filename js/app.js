@@ -1940,7 +1940,14 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     duration: function duration() {
-      return this.marqueeLines.length * 7;
+      var letters = 0;
+
+      _.forEach(this.marqueeLines, function (l) {
+        l = l.replace(/<\/?[^>]+(>|$)/g, "");
+        letters += l.length;
+      });
+
+      return Math.ceil(letters / 9);
     }
   },
   mounted: function mounted() {
@@ -30159,7 +30166,7 @@ var render = function() {
         "marquee-text",
         {
           staticClass: "relative",
-          attrs: { duration: _vm.duration, repeat: 3 }
+          attrs: { duration: _vm.duration, repeat: 5 }
         },
         _vm._l(_vm.marqueeLines, function(line) {
           return _c("span", {
