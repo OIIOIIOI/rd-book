@@ -74,12 +74,13 @@ $_POST = array();
 	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Admin</title>
+	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="font-sans bg-gray-200 text-pink-900 p-8">
 	<div class="">
-		<a href="/">Retour</a>
-		<h1 class="">Bandeau d'infos</h1>
+		<a href="/" class=" block px-4 py-2 text-xl no-underline bg-pink-400 text-white hover:text-white"><i class="icon ion-md-arrow-round-back mr-2"></i>Retour</a>
+		<h1 class="mt-4">Bandeau d'infos</h1>
 		<h2 class="mt-3">Contenu actuel :</h2>
 		<ul class="bg-black text-pink-100 mt-2 py-1">
 			<?php foreach ($data_lines['lines'] as $line) : ?>
@@ -87,7 +88,7 @@ $_POST = array();
 			<?php endforeach; ?>
 		</ul>
 		<h2 class="mt-3">Mise à jour</h2>
-		<form action="" method="post">
+		<form action="" method="post" class="mt-2">
 			<label for="line_select">Nouvelle ligne :</label>
 			<select name="line_text" id="line_select">
 				<option value="next_game">Prochain match</option>
@@ -97,7 +98,7 @@ $_POST = array();
 				<option value="the_end">The End</option>
 				<option value="custom">Custom</option>
 			</select>
-			<label for="game_select">Match :</label>
+			<label for="game_select" class="block mt-2">Match :</label>
 			<select name="line_game" id="game_select">
 				<option value="0">Match 1</option>
 				<option value="1">Match 2</option>
@@ -105,16 +106,16 @@ $_POST = array();
 				<option value="3">Match 4</option>
 				<option value="4">Match 5</option>
 			</select>
-			<label for="custom_msg">Custom message :</label>
+			<label for="custom_msg" class="block mt-2">Custom message :</label>
 			<input type="text" name="custom_msg" placeholder="Custom message" id="custom_msg" class="w-full px-4 py-3 mt-2">
-			<div class="block">
-				<input type="radio" name="overwrite" value="true" id="ow_true" checked><label for="ow_true" class="ml-2">Écraser l'existant</label>
+			<div class="block mt-2">
+				<input type="radio" name="overwrite" value="true" id="ow_true" checked><label for="ow_true" class="inline-block ml-2 py-2">Écraser l'existant</label>
 			</div>
 			<div class="block">
-				<input type="radio" name="overwrite" value="false" id="ow_false"><label for="ow_false" class="ml-2">Ajouter à la suite</label>
+				<input type="radio" name="overwrite" value="false" id="ow_false"><label for="ow_false" class="inline-block ml-2 py-2">Ajouter à la suite</label>
 			</div>
 			<input type="hidden" name="action" value="update_lines">
-			<input type="submit" value="Valider">
+			<input type="submit" value="Valider" class="mt-4">
 		</form>
 	</div>
 	<div class="mt-8">
