@@ -3,7 +3,7 @@
 		<h1 class="text-center mt-6">PROGRAMME</h1>
 		<div v-for="(day, index) in games" :key="index">
 			<h2 class="text-center my-6"><i class="icon ion-md-calendar mr-2"></i><span class="text-pink-400">{{ day.date}}</span></h2>
-			<game v-for="game in day.games" :key="game.id" :game="game" :current="isCurrent(game)" :class="(index % 2) ? 'odd' : 'even'"></game>
+			<game v-for="game in day.games" :key="game.id" :game="game" :class="(game.id % 2) ? 'odd' : 'even'"></game>
 		</div>
 	</div>
 </template>
@@ -26,7 +26,7 @@
 	    },
         methods: {
             isCurrent: function (game) {
-                console.log(parseInt(game.id), parseInt(this.current_game.current));
+                // console.log(parseInt(game.id), parseInt(this.current_game.current));
                 return (parseInt(game.id) === parseInt(this.current_game.current));
             },
         },

@@ -2094,7 +2094,7 @@ var _data_current__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpac
   mounted: function mounted() {},
   methods: {
     isCurrent: function isCurrent(game) {
-      console.log(parseInt(game.id), parseInt(this.current_game.current));
+      // console.log(parseInt(game.id), parseInt(this.current_game.current));
       return parseInt(game.id) === parseInt(this.current_game.current);
     }
   }
@@ -2217,16 +2217,14 @@ __webpack_require__.r(__webpack_exports__);
   props: {
     game: {
       required: true
-    },
-    current: {
-      required: true
-    }
+    } // current: { required: true },
+
   },
   computed: {
     classes: function classes() {
       var a = [];
-      if (this.game.over) a.push('is-over');
-      if (this.current) a.push('is-current');
+      if (this.game.over) a.push('is-over'); // if (this.current) a.push('is-current');
+
       return a.join(' ');
     },
     teamAWon: function teamAWon() {
@@ -30627,8 +30625,8 @@ var render = function() {
             _vm._l(day.games, function(game) {
               return _c("game", {
                 key: game.id,
-                class: index % 2 ? "odd" : "even",
-                attrs: { game: game, current: _vm.isCurrent(game) }
+                class: game.id % 2 ? "odd" : "even",
+                attrs: { game: game }
               })
             })
           ],
