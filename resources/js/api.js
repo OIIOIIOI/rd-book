@@ -41,4 +41,11 @@ export default {
             url: '/resources/data/current.json?' + new Date().getTime(),
         }, thenCallback)
     },
+    getAllGames (thenCallback)
+    {
+        this.call({
+            method: 'GET',
+            url: '/resources/data/games.json?' + new Date().getTime(),
+        }, thenCallback)
+    },
 }

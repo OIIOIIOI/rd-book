@@ -3,16 +3,14 @@
 		<h1 class="text-center mt-6">PROGRAMME</h1>
 		<div v-for="(day, index) in games" :key="index">
 			<h2 class="text-center my-6"><i class="icon ion-md-calendar mr-2"></i><span class="text-pink-400">{{ day.date}}</span></h2>
-			<game v-for="game in day.games" :key="game.id" :game="game" :class="(game.id % 2) ? 'odd' : 'even'"></game>
+			<game v-for="game in day.games" :key="game.id" :game="game" :current="isCurrent(game.id)" :class="(game.id % 2) ? 'odd' : 'even'"></game>
 		</div>
 	</div>
 </template>
 
 <script>
     import Game from "./program/Game";
-    import DataGames from '../../data/games';
     import API from "../api";
-    // import DataCurrent from '../../data/current';
 
     export default {
         name: "Program",
@@ -20,20 +18,21 @@
             Game,
         },
         data: () => ({
-            games: DataGames,
+            games: [],
             current_game: -1,
         }),
 	    mounted () {
             let vm = this;
+            API.getAllGames(({data}) => {
+                vm.games = data;
+            });
             API.getCurrentGame(({data}) => {
-                vm.current_game = data.current;
-                console.log(vm.current_game);
+                vm.current_game = data;
             });
 	    },
         methods: {
-            isCurrent: function (game) {
-                // console.log(parseInt(game.id), parseInt(this.current_game.current));
-                return (parseInt(game.id) === parseInt(this.current_game.current));
+            isCurrent: function (id) {
+                return (id === this.current_game.current);
             },
         },
     }

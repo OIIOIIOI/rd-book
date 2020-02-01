@@ -26,13 +26,13 @@
         name: "Game",
         props: {
             game: { required: true },
-            // current: { required: true },
+            current: { required: true },
         },
         computed: {
             classes: function () {
                 let a = [];
                 if (this.game.over) a.push('is-over');
-                // if (this.current) a.push('is-current');
+                if (this.current) a.push('is-current');
                 return a.join(' ');
             },
             teamAWon: function () {

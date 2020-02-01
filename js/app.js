@@ -2063,9 +2063,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _program_Game__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./program/Game */ "./resources/js/components/program/Game.vue");
-/* harmony import */ var _data_games__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../data/games */ "./resources/data/games.json");
-var _data_games__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../data/games */ "./resources/data/games.json", 1);
-/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../api */ "./resources/js/api.js");
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../api */ "./resources/js/api.js");
 //
 //
 //
@@ -2077,8 +2075,6 @@ var _data_games__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_
 //
 //
 
-
- // import DataCurrent from '../../data/current';
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Program",
@@ -2087,22 +2083,24 @@ var _data_games__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_
   },
   data: function data() {
     return {
-      games: _data_games__WEBPACK_IMPORTED_MODULE_1__,
+      games: [],
       current_game: -1
     };
   },
   mounted: function mounted() {
     var vm = this;
-    _api__WEBPACK_IMPORTED_MODULE_2__["default"].getCurrentGame(function (_ref) {
+    _api__WEBPACK_IMPORTED_MODULE_1__["default"].getAllGames(function (_ref) {
       var data = _ref.data;
-      vm.current_game = data.current;
-      console.log(vm.current_game);
+      vm.games = data;
+    });
+    _api__WEBPACK_IMPORTED_MODULE_1__["default"].getCurrentGame(function (_ref2) {
+      var data = _ref2.data;
+      vm.current_game = data;
     });
   },
   methods: {
-    isCurrent: function isCurrent(game) {
-      // console.log(parseInt(game.id), parseInt(this.current_game.current));
-      return parseInt(game.id) === parseInt(this.current_game.current);
+    isCurrent: function isCurrent(id) {
+      return id === this.current_game.current;
     }
   }
 });
@@ -2224,14 +2222,16 @@ __webpack_require__.r(__webpack_exports__);
   props: {
     game: {
       required: true
-    } // current: { required: true },
-
+    },
+    current: {
+      required: true
+    }
   },
   computed: {
     classes: function classes() {
       var a = [];
-      if (this.game.over) a.push('is-over'); // if (this.current) a.push('is-current');
-
+      if (this.game.over) a.push('is-over');
+      if (this.current) a.push('is-current');
       return a.join(' ');
     },
     teamAWon: function teamAWon() {
@@ -30633,7 +30633,7 @@ var render = function() {
               return _c("game", {
                 key: game.id,
                 class: game.id % 2 ? "odd" : "even",
-                attrs: { game: game }
+                attrs: { game: game, current: _vm.isCurrent(game.id) }
               })
             })
           ],
@@ -47742,17 +47742,6 @@ module.exports = JSON.parse("{\"id\":14,\"name\":\"Les Pétroleuses\",\"roster\"
 
 /***/ }),
 
-/***/ "./resources/data/games.json":
-/*!***********************************!*\
-  !*** ./resources/data/games.json ***!
-  \***********************************/
-/*! exports provided: 0, 1, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("[{\"date\":\"Samedi 1er février\",\"games\":[{\"id\":0,\"over\":false,\"title\":\"Match 1\",\"time\":\"12:00\",\"teams\":[{\"name\":\"Les Divines Machines\",\"city\":\"Nantes\"},{\"name\":\"Les Morues\",\"city\":\"Lorient\"}],\"scores\":[\"0\",\"0\"]},{\"id\":1,\"over\":false,\"title\":\"Match 2\",\"time\":\"14:30\",\"teams\":[{\"name\":\"Les Bomb'Hard\",\"city\":\"Kemper\"},{\"name\":\"Les Pétroleuses\",\"city\":\"Caen\"}],\"scores\":[\"0\",\"0\"]},{\"id\":2,\"over\":false,\"title\":\"Match 3\",\"time\":\"17:00\",\"teams\":[{\"name\":\"Toutes Etoiles\",\"city\":\"Brest\"},{\"name\":\"Les Missfeet\",\"city\":\"Le Mans\"}],\"scores\":[0,0]}]},{\"date\":\"Dimanche 2 février\",\"games\":[{\"id\":3,\"over\":false,\"title\":\"Match 4\",\"time\":\"11:00\",\"teams\":[{\"name\":\"Les Divines Machines\",\"city\":\"Nantes\"},{\"name\":\"Les Pétroleuses\",\"city\":\"Caen\"}],\"scores\":[\"0\",\"0\"]},{\"id\":4,\"over\":false,\"title\":\"Match 5\",\"time\":\"14:00\",\"teams\":[{\"name\":\"Les Missfeet\",\"city\":\"Le Mans\"},{\"name\":\"Les Morues\",\"city\":\"Lorient\"}],\"scores\":[0,0]}]}]");
-
-/***/ }),
-
 /***/ "./resources/data/lemans.json":
 /*!************************************!*\
   !*** ./resources/data/lemans.json ***!
@@ -47845,6 +47834,12 @@ __webpack_require__.r(__webpack_exports__);
     this.call({
       method: 'GET',
       url: '/resources/data/current.json?' + new Date().getTime()
+    }, thenCallback);
+  },
+  getAllGames: function getAllGames(thenCallback) {
+    this.call({
+      method: 'GET',
+      url: '/resources/data/games.json?' + new Date().getTime()
     }, thenCallback);
   }
 });
