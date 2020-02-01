@@ -2088,8 +2088,9 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
-    isCurrent: function isCurrent(id) {
-      return id == this.current.current;
+    isCurrent: function isCurrent(game) {
+      console.log(parseInt(game.id), parseInt(this.current.current));
+      return parseInt(game.id) === parseInt(this.current.current);
     }
   }
 });
@@ -30622,7 +30623,7 @@ var render = function() {
               return _c("game", {
                 key: index,
                 class: index % 2 ? "odd" : "even",
-                attrs: { game: game, current: _vm.isCurrent(game.id) }
+                attrs: { game: game, current: _vm.isCurrent(game) }
               })
             })
           ],
