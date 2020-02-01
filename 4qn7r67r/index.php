@@ -4,6 +4,8 @@ $MARQUEE_FILE = "../resources/data/marquee.json";
 $GAMES_FILE = "../resources/data/games.json";
 $CURRENT_FILE = "../resources/data/current.json";
 
+chmod($CURRENT_FILE, 0777);
+
 $data_source_lines = json_decode(file_get_contents($SOURCE_LINES_FILE),true);
 $data_lines = json_decode(file_get_contents($MARQUEE_FILE),true);
 $data_games = json_decode(file_get_contents($GAMES_FILE),true);
