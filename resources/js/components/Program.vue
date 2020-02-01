@@ -23,7 +23,7 @@
         }),
         methods: {
             isCurrent: function (id) {
-                return id === this.current.current;
+                return id == this.current.current;
             },
         },
     }
