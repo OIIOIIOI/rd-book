@@ -118,11 +118,11 @@ $_POST = array();
 		<form action="" method="post">
 			<label for="scores_game_select" class="block mt-2">Match :</label>
 			<select name="scores_game" id="scores_game_select">
-				<option value="0">Match 1</option>
-				<option value="1">Match 2</option>
-				<option value="2">Match 3</option>
-				<option value="3">Match 4</option>
-				<option value="4">Match 5</option>
+				<option value="0">Match 1 : Divines - Morues</option>
+				<option value="1">Match 2 : Bomb'Hard - Pétroleuses</option>
+				<option value="2">Match 3 : Toutes Etoiles - Missfeet</option>
+				<option value="3">Match 4 : Divines - Pétroleuses</option>
+				<option value="4">Match 5 : Missfeet - Morues</option>
 			</select>
 			<div class="flex justify-between">
 				<div class="flex-grow mt-2 mr-2">
@@ -159,11 +159,11 @@ $_POST = array();
 			</select>
 			<label for="game_select" class="block mt-2">Match :</label>
 			<select name="line_game" id="game_select">
-				<option value="0">Match 1</option>
-				<option value="1">Match 2</option>
-				<option value="2">Match 3</option>
-				<option value="3">Match 4</option>
-				<option value="4">Match 5</option>
+				<option value="0">Match 1 : Divines - Morues</option>
+				<option value="1">Match 2 : Bomb'Hard - Pétroleuses</option>
+				<option value="2">Match 3 : Toutes Etoiles - Missfeet</option>
+				<option value="3">Match 4 : Divines - Pétroleuses</option>
+				<option value="4">Match 5 : Missfeet - Morues</option>
 			</select>
 			<label for="custom_msg" class="block mt-2">Custom message :</label>
 			<input type="text" name="custom_msg" placeholder="Custom message" id="custom_msg" class="w-full px-4 py-3 mt-2">
