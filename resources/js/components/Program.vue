@@ -19,12 +19,12 @@
         },
         data: () => ({
             games: require('../../data/games'),
-            current: require('../../data/current'),
+            current_game: require('../../data/current'),
         }),
         methods: {
             isCurrent: function (game) {
-                console.log(parseInt(game.id), parseInt(this.current.current));
-                return (parseInt(game.id) === parseInt(this.current.current));
+                console.log(parseInt(game.id), parseInt(this.current_game.current));
+                return (parseInt(game.id) === parseInt(this.current_game.current));
             },
         },
     }

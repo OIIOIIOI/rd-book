@@ -2084,13 +2084,13 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       games: __webpack_require__(/*! ../../data/games */ "./resources/data/games.json"),
-      current: __webpack_require__(/*! ../../data/current */ "./resources/data/current.json")
+      current_game: __webpack_require__(/*! ../../data/current */ "./resources/data/current.json")
     };
   },
   methods: {
     isCurrent: function isCurrent(game) {
-      console.log(parseInt(game.id), parseInt(this.current.current));
-      return parseInt(game.id) === parseInt(this.current.current);
+      console.log(parseInt(game.id), parseInt(this.current_game.current));
+      return parseInt(game.id) === parseInt(this.current_game.current);
     }
   }
 });
@@ -47739,7 +47739,7 @@ module.exports = JSON.parse("{\"id\":14,\"name\":\"Les Pétroleuses\",\"roster\"
 /*! exports provided: current, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"current\":-1}");
+module.exports = JSON.parse("{\"current\":1}");
 
 /***/ }),
 
