@@ -38,7 +38,7 @@ export default {
     {
         this.call({
             method: 'GET',
-            url: '/resources/data/current.json' + new Date().getTime(),
+            url: '/resources/data/current.json?' + new Date().getTime(),
         }, thenCallback)
     },
 }

@@ -2065,8 +2065,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _program_Game__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./program/Game */ "./resources/js/components/program/Game.vue");
 /* harmony import */ var _data_games__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../data/games */ "./resources/data/games.json");
 var _data_games__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../data/games */ "./resources/data/games.json", 1);
-/* harmony import */ var _data_current__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../data/current */ "./resources/data/current.json");
-var _data_current__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../data/current */ "./resources/data/current.json", 1);
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../api */ "./resources/js/api.js");
 //
 //
 //
@@ -2079,6 +2078,7 @@ var _data_current__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpac
 //
 
 
+ // import DataCurrent from '../../data/current';
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Program",
@@ -2088,10 +2088,17 @@ var _data_current__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpac
   data: function data() {
     return {
       games: _data_games__WEBPACK_IMPORTED_MODULE_1__,
-      current_game: _data_current__WEBPACK_IMPORTED_MODULE_2__
+      current_game: -1
     };
   },
-  mounted: function mounted() {},
+  mounted: function mounted() {
+    var vm = this;
+    _api__WEBPACK_IMPORTED_MODULE_2__["default"].getCurrentGame(function (_ref) {
+      var data = _ref.data;
+      vm.current_game = data.current;
+      console.log(vm.current_game);
+    });
+  },
   methods: {
     isCurrent: function isCurrent(game) {
       // console.log(parseInt(game.id), parseInt(this.current_game.current));
@@ -47735,17 +47742,6 @@ module.exports = JSON.parse("{\"id\":14,\"name\":\"Les Pétroleuses\",\"roster\"
 
 /***/ }),
 
-/***/ "./resources/data/current.json":
-/*!*************************************!*\
-  !*** ./resources/data/current.json ***!
-  \*************************************/
-/*! exports provided: current, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"current\":1}");
-
-/***/ }),
-
 /***/ "./resources/data/games.json":
 /*!***********************************!*\
   !*** ./resources/data/games.json ***!
@@ -47843,6 +47839,12 @@ __webpack_require__.r(__webpack_exports__);
     this.call({
       method: 'GET',
       url: '/resources/data/marquee.json?' + new Date().getTime()
+    }, thenCallback);
+  },
+  getCurrentGame: function getCurrentGame(thenCallback) {
+    this.call({
+      method: 'GET',
+      url: '/resources/data/current.json?' + new Date().getTime()
     }, thenCallback);
   }
 });
