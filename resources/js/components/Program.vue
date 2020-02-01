@@ -21,6 +21,10 @@
             games: require('../../data/games'),
             current_game: require('../../data/current'),
         }),
+	    mounted () {
+            delete require.cache[require.resolve('../../data/games')]
+            delete require.cache[require.resolve('../../data/current')]
+	    },
         methods: {
             isCurrent: function (game) {
                 console.log(parseInt(game.id), parseInt(this.current_game.current));
