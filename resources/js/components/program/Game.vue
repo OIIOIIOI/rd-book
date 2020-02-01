@@ -36,10 +36,10 @@
                 return a.join(' ');
             },
             teamAWon: function () {
-                return this.game.scores[0] > this.game.scores[1] && this.game.over;
+                return (this.game.scores[0] > this.game.scores[1]) && this.game.over;
             },
             teamBWon: function () {
-                return this.game.scores[1] > this.game.scores[0] && this.game.over;
+                return (this.game.scores[1] > this.game.scores[0]) && this.game.over;
             }
         },
     }
