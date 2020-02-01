@@ -79,7 +79,10 @@ $_POST = array();
 </head>
 <body class="font-sans bg-gray-200 text-pink-900 p-8">
 	<div class="">
-		<a href="/" class=" block px-4 py-2 text-xl no-underline bg-pink-400 text-white hover:text-white"><i class="icon ion-md-arrow-round-back mr-2"></i>Retour</a>
+		<div class="flex justify-between">
+			<a href="/" class="block flex-grow px-4 py-2 mr-2 text-xl no-underline bg-pink-400 text-white hover:text-white"><i class="icon ion-md-arrow-round-back mr-2"></i>Retour</a>
+			<a href="/4qn7r67r" class="block flex-grow px-4 py-2 ml-2 text-xl no-underline bg-pink-400 text-white hover:text-white"><i class="icon ion-md-refresh mr-2"></i>Actualiser</a>
+		</div>
 		<h1 class="mt-4">Bandeau d'infos</h1>
 		<h2 class="mt-3">Contenu actuel :</h2>
 		<ul class="bg-black text-pink-100 mt-2 py-1">

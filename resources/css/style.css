@@ -52,7 +52,7 @@ a {
 
 form {
     input[type='submit'] {
-        @apply block px-4 py-3 bg-pink-400 text-white w-full;
+        @apply block px-4 py-3 bg-pink-400 text-white text-xl w-full;
     }
     select {
         @apply block px-4 py-2 w-full;
