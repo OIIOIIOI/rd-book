@@ -34,4 +34,11 @@ export default {
             url: '/resources/data/marquee.json?' + new Date().getTime(),
         }, thenCallback)
     },
+    getCurrentGame (thenCallback)
+    {
+        this.call({
+            method: 'GET',
+            url: '/resources/data/current.json' + new Date().getTime(),
+        }, thenCallback)
+    },
 }

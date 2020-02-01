@@ -11,7 +11,8 @@
 <script>
     import Game from "./program/Game";
     import DataGames from '../../data/games';
-    import DataCurrent from '../../data/current';
+    import API from "../api";
+    // import DataCurrent from '../../data/current';
 
     export default {
         name: "Program",
@@ -20,9 +21,14 @@
         },
         data: () => ({
             games: DataGames,
-            current_game: DataCurrent,
+            current_game: -1,
         }),
 	    mounted () {
+            let vm = this;
+            API.getCurrentGame(({data}) => {
+                vm.current_game = data.current;
+                console.log(vm.current_game);
+            });
 	    },
         methods: {
             isCurrent: function (game) {
