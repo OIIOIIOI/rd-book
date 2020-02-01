@@ -10,7 +10,8 @@
 
 <script>
     import Game from "./program/Game";
-    import API from "../api";
+    import DataGames from '../../data/games';
+    import DataCurrent from '../../data/current';
 
     export default {
         name: "Program",
@@ -18,12 +19,10 @@
             Game,
         },
         data: () => ({
-            games: require('../../data/games'),
-            current_game: require('../../data/current'),
+            games: DataGames,
+            current_game: DataCurrent,
         }),
 	    mounted () {
-            delete require.cache[require.resolve('../../data/games')]
-            delete require.cache[require.resolve('../../data/current')]
 	    },
         methods: {
             isCurrent: function (game) {

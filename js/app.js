@@ -2063,7 +2063,10 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _program_Game__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./program/Game */ "./resources/js/components/program/Game.vue");
-/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../api */ "./resources/js/api.js");
+/* harmony import */ var _data_games__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../data/games */ "./resources/data/games.json");
+var _data_games__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../data/games */ "./resources/data/games.json", 1);
+/* harmony import */ var _data_current__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../data/current */ "./resources/data/current.json");
+var _data_current__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../data/current */ "./resources/data/current.json", 1);
 //
 //
 //
@@ -2074,6 +2077,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2083,14 +2087,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      games: __webpack_require__(/*! ../../data/games */ "./resources/data/games.json"),
-      current_game: __webpack_require__(/*! ../../data/current */ "./resources/data/current.json")
+      games: _data_games__WEBPACK_IMPORTED_MODULE_1__,
+      current_game: _data_current__WEBPACK_IMPORTED_MODULE_2__
     };
   },
-  mounted: function mounted() {
-    delete __webpack_require__.c[/*require.resolve*/(/*! ../../data/games */ "./resources/data/games.json")];
-    delete __webpack_require__.c[/*require.resolve*/(/*! ../../data/current */ "./resources/data/current.json")];
-  },
+  mounted: function mounted() {},
   methods: {
     isCurrent: function isCurrent(game) {
       console.log(parseInt(game.id), parseInt(this.current_game.current));
@@ -47743,7 +47744,7 @@ module.exports = JSON.parse("{\"id\":14,\"name\":\"Les Pétroleuses\",\"roster\"
 /*! exports provided: current, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"current\":4}");
+module.exports = JSON.parse("{\"current\":-1}");
 
 /***/ }),
 
