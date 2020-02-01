@@ -47739,7 +47739,7 @@ module.exports = JSON.parse("{\"id\":14,\"name\":\"Les Pétroleuses\",\"roster\"
 /*! exports provided: current, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"current\":0}");
+module.exports = JSON.parse("{\"current\":-1}");
 
 /***/ }),
 
