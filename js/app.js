@@ -30624,9 +30624,9 @@ var render = function() {
               ])
             ]),
             _vm._v(" "),
-            _vm._l(day.games, function(game, index) {
+            _vm._l(day.games, function(game) {
               return _c("game", {
-                key: index,
+                key: game.id,
                 class: index % 2 ? "odd" : "even",
                 attrs: { game: game, current: _vm.isCurrent(game) }
               })

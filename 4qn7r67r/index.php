@@ -96,7 +96,6 @@ if (isset($_POST['action']))
 		file_put_contents($MARQUEE_FILE, json_encode($data_lines));
 	}
 }
-$_POST = array();
 ?>
 <!doctype html>
 <html lang="en">
