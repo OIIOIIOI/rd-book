@@ -134,6 +134,9 @@ $_POST = array();
 					<input type="number" name="score_team_b" id="score_team_b" value="0" min="0">
 				</div>
 			</div>
+			<div class="block mt-2">
+				<input type="checkbox" name="is_over" id="is_over"><label for="is_over" class="inline-block ml-2 py-2">Match terminé</label>
+			</div>
 			<input type="hidden" name="action" value="update_scores">
 			<input type="submit" value="Valider" class="mt-4">
 		</form>
