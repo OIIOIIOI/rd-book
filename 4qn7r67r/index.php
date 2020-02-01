@@ -7,7 +7,11 @@ $CURRENT_FILE = "../resources/data/current.json";
 $data_source_lines = json_decode(file_get_contents($SOURCE_LINES_FILE),true);
 $data_lines = json_decode(file_get_contents($MARQUEE_FILE),true);
 $data_games = json_decode(file_get_contents($GAMES_FILE),true);
-$data_current = json_decode(file_get_contents($CURRENT_FILE),true);
+
+$handle = fopen($CURRENT_FILE, 'r');
+$read = fread($handle, filesize($CURRENT_FILE));
+fclose($handle);
+$data_current = json_decode($read,true);
 
 if (isset($_POST['action']))
 {
@@ -45,7 +49,11 @@ if (isset($_POST['action']))
 	{
 		$current_game = $_POST['current_game'];
 		$data_current['current'] = intval($current_game);
-		file_put_contents($CURRENT_FILE, json_encode($data_current));
+		
+		$handle = fopen($CURRENT_FILE, 'w+');
+		fwrite($handle, json_encode($data_current));
+		fclose($handle);
+//		file_put_contents($CURRENT_FILE, json_encode($data_current));
 	}
 	// Update lines
 	else if ($action == 'update_lines')
