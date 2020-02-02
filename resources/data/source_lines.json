@@ -1,5 +1,6 @@
 {
   "next_game": "<span class='uppercase font-black'>Prochain match</span> à <span class='font-semibold'>[TIME]</span> - <span class='font-semibold'>[TEAM_A]</span> vs <span class='font-semibold'>[TEAM_B]</span>",
+  "game_started": "<span class='uppercase font-black'>C'est parti !</span> Rendez-vous sur le <a href='https://www.youtube.com/channel/UCCAIZYuMmGPK_xwBAtjrIxw' target='_blank' class='font-semibold'>livestream</a> pour le match <span class='font-semibold'>[TEAM_A]</span> vs <span class='font-semibold'>[TEAM_B]</span>",
   "half_time": "<span class='uppercase font-black'>Score à la mi-temps</span> : <span class='font-semibold'>[TEAM_A]</span> <span class='font-black'>[SCORE_A]</span> vs <span class='font-black'>[SCORE_B]</span> <span class='font-semibold'>[TEAM_B]</span>",
   "final_score": "<span class='uppercase font-black'>Score final</span> : <span class='font-semibold'>[TEAM_A]</span> <span class='font-black'>[SCORE_A]</span> vs <span class='font-black'>[SCORE_B]</span> <span class='font-semibold'>[TEAM_B]</span>",
   "saturday_night": "<span class='uppercase font-black'>C'est fini pour aujourd'hui !</span> Rendez-vous pour l'<span class='font-semibold'>after à l'Elephant Pub</span>, place d'Alger",

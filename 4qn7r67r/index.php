@@ -211,6 +211,7 @@ if (isset($_POST['action']))
 			<label for="line_select">Nouvelle ligne :</label>
 			<select name="line_text" id="line_select">
 				<option value="next_game">Prochain match</option>
+				<option value="game_started">Match lancé</option>
 				<option value="half_time">Half-time</option>
 				<option value="final_score">Final score</option>
 				<option value="saturday_night">Saturday night</option>
