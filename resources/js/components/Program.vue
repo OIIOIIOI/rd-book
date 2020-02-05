@@ -29,6 +29,7 @@
             API.getCurrentGame(({data}) => {
                 vm.current_game = data;
             });
+            OWATracker.trackAction('Cooking', 'Recipe Print',  'Best Chicken Parmesan Recipe', 10);
 	    },
         methods: {
             isCurrent: function (id) {
